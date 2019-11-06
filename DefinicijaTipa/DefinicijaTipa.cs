@@ -14,10 +14,10 @@ namespace Vsite.CSharp.DefiniranjeTipa
 
     struct MojaStruktura
     {
-        // TODO:012 Dodati privatno polje (podatkovni član) "tekst" tipa string i dodijeliti mu vrijednost "MojaStruktura"
+        // TODO:013 Dodati privatno polje (podatkovni član) "tekst" tipa string i dodijeliti mu vrijednost "MojaStruktura"
 
 
-        // TODO:013 Zadati metodu IspišiČlan tipa void i u njoj dodati naredbu koja će ispisati podatkovni član "tekst".
+        // TODO:014 Zadati metodu IspišiČlan tipa void i u njoj dodati naredbu koja će ispisati podatkovni član "tekst".
 
     }
 
@@ -26,7 +26,7 @@ namespace Vsite.CSharp.DefiniranjeTipa
     {
         public static void IspišiČlanKlase()
         {
-            // TODO:014 Inicijalizirati objekt tipa MojaKlasa i pozvati njegovu metodu IspišiČlan
+            // TODO:012 Inicijalizirati objekt tipa MojaKlasa i pozvati njegovu metodu IspišiČlan
 
         }
 

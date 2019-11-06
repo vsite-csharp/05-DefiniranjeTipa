@@ -6,7 +6,7 @@ namespace Vsite.CSharp.DefiniranjeTipa.Testovi
     public class TestClass_Struct : ConsoleTest
     {
         [TestMethod]
-        public void ClassStruct_IspišiKlase()
+        public void IspišiKlase()
         {
             ClassStruct.IspišiKlase();
             Assert.AreEqual(5, cw.GetInt());
@@ -17,7 +17,7 @@ namespace Vsite.CSharp.DefiniranjeTipa.Testovi
         }
 
         [TestMethod]
-        public void ClassStruct_IspišiStrukture()
+        public void IspišiStrukture()
         {
             ClassStruct.IspišiStrukture();
             Assert.AreEqual("MojaStruktura", cw.GetString());

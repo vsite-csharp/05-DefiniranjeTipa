@@ -7,7 +7,7 @@ namespace Vsite.CSharp.DefiniranjeTipa.Testovi
     public class TestKonstruktorKlase : ConsoleTest
     {
         [TestMethod]
-        public void KonstruktorKlase_KonstruktorSArgumentimaInicijaliziraOsobu()
+        public void KonstruktorSArgumentimaInicijaliziraOsobu()
         {
             KonstruktorKlase.StvoriObjektZadanimKonstruktorom("Nikola", "Tesla", new DateTime(1856, 7, 10));
             Assert.AreEqual("Nikola", cw.GetString());

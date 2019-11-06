@@ -8,7 +8,7 @@ namespace Vsite.CSharp.DefiniranjeTipa.Testovi
     public class TestStatičkihČlanova : ConsoleTest
     {
         [TestMethod]
-        public void StatičkiČlanovi_IspišiBrojStvorenihObjekataIspisujeBrojStvorenihObjekata()
+        public void IspišiBrojStvorenihObjekataIspisujeBrojStvorenihObjekata()
         {
             BrojačInstanci.IspišiBrojStvorenihObjekata();
             int brojObjekata = cw.GetInt();
@@ -23,7 +23,7 @@ namespace Vsite.CSharp.DefiniranjeTipa.Testovi
         }
 
         [TestMethod]
-        public void StatičkiČlanovi_IspišiRedniBrojObjektaIspisujeRedniBroj()
+        public void IspišiRedniBrojObjektaIspisujeRedniBroj()
         {
             BrojačInstanci.IspišiBrojStvorenihObjekata();
             int brojObjekata = cw.GetInt();

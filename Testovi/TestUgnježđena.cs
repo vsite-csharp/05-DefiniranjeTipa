@@ -6,7 +6,7 @@ namespace Vsite.CSharp.DefiniranjeTipa.Testovi
     public class TestUgnježđena : ConsoleTest
     {
         [TestMethod]
-        public void UgnježđenaKlasa_Gnijezdo_IspišiSeIspisujeZadaniTekst()
+        public void Gnijezdo_IspišiSeIspisujeZadaniTekst()
         {
             Gnijezdo g = new Gnijezdo();
             g.IspišiMe();
@@ -15,7 +15,7 @@ namespace Vsite.CSharp.DefiniranjeTipa.Testovi
         }
 
         [TestMethod]
-        public void UgnježđenaKlasa_IzvedenoGnijezdo_PredstaviSeIspisujeZadaniTekst()
+        public void IzvedenoGnijezdo_PredstaviSeIspisujeZadaniTekst()
         {
             IzvedenoGnijezdo ig = new IzvedenoGnijezdo();
             ig.PredstaviSe();
@@ -23,7 +23,7 @@ namespace Vsite.CSharp.DefiniranjeTipa.Testovi
         }
 
         [TestMethod]
-        public void UgnježđenaKlasa_IzravnoKorištenjeUgnježđeneKlase()
+        public void IzravnoKorištenjeUgnježđeneKlase()
         {
             UgnježđenaKlasa.IzravnoKorištenjeUgnježđeneKlase();
             Assert.AreEqual("Ja sam klasa Ugnježđena, neposredno", cw.GetString());

@@ -7,7 +7,7 @@ namespace Vsite.CSharp.DefiniranjeTipa.Testovi
     public class TestIDisposable
     {
         [TestMethod]
-        public void IDisposable_DatotekaJeUspješnoObrisana()
+        public void DatotekaJeUspješnoObrisana()
         {
             string ime = "privremena.txt";
             Disposable.StvaranjeIPisanjeUDatoteku(ime);
