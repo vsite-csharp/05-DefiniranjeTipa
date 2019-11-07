@@ -8,22 +8,19 @@ namespace Vsite.CSharp.DefiniranjeTipa
     {
         public static void IspišiTrenutniDatumVrijeme()
         {
-            DateTime now = DateTime.Now;
+            Console.WriteLine(DateTime.Now);
            
         }
 
         public static void IspišiDanašnjiDatum()
         {
-            DateTime dateToDisplay = DateTime.Now;
-            Console.WriteLine("Displaying short date for {0} culture", Thread.CurrentThread.CurrentCulture.Name);
-            Console.WriteLine("{0}", dateToDisplay.ToShortDateString());
+            Console.WriteLine(DateTime.Now.ToShortDateString());
         }
 
         public static void IspišiTrenutnoVrijeme()
         {
-            DateTime dateToDisplay = DateTime.Now;
-            Console.WriteLine("Displaying short date for {0} culture", Thread.CurrentThread.CurrentCulture.Name);
-            Console.WriteLine("{0}", dateToDisplay.ToShortTimeString());
+            Console.WriteLine(DateTime.Now.ToShortTimeString());
+
         }
 
         public static int IzračunajBrojDanaIzmeđuDvaDatuma(int godina1, int mjesec1, int dan1, int godina2, int mjesec2, int dan2)
