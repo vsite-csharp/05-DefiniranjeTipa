@@ -28,7 +28,6 @@ namespace Vsite.CSharp.DefiniranjeTipa
             DateTime datum2 = new DateTime(godina2, mjesec2, dan2);
 
             TimeSpan period = datum2 - datum1;
-            // TODO:006 Budući da metoda mora kao rezultat vratiti izračunati period izražen kao broj dana, iz prethodno izračunatog perioda treba dohvatiti i vratiti svojstvo Days (tj. svojstvo TimeSpan.Days).
             return period.Days;
         }
 
