@@ -2,16 +2,30 @@
 
 namespace Vsite.CSharp.DefiniranjeTipa
 {
-    // TODO:020 Prekopirati kod klase iz prethodnog primjera i promijeniti pravo pristupa članu "broj" u public
     class MojaKlasa
     {
+        public int broj = 5;
 
+        public void IspišiČlan()
+        {
+            Console.WriteLine(broj);
+        }
+     
     }
 
-    // TODO:024 Prekopirati kod strukture iz prethodnog primjera i promijeniti pravo pristupa članu "tekst" u public
     struct MojaStruktura
     {
-
+        public string tekst;
+    
+        public void IspišiČlan()
+        {
+            tekst = "MojaStruktura";
+            Console.WriteLine(tekst);
+        }
+        public void IspišiČlan(string tekst)
+        {
+            Console.WriteLine(tekst);
+        }
 
     }
 
@@ -21,30 +35,31 @@ namespace Vsite.CSharp.DefiniranjeTipa
         {
             MojaKlasa mk1 = new MojaKlasa();
             MojaKlasa mk2 = mk1;
-            // TODO:021 Napisati naredbe koje pozivaju metodu IspišiČlan za obje instance.
-
+            
+            mk1.IspišiČlan();
+            mk2.IspišiČlan();
 
             Console.WriteLine();
-            // TODO:022 Otkomentirati donju naredbu.
-            //mk2.broj = 2;
-            // TODO:023 Ponovno pozvati metodu IspišiČlan za obje instance te obrazložiti rezultat.
-
+            mk2.broj = 2;
+            mk1.IspišiČlan();
+            mk2.IspišiČlan();
+            //mk1 i mk2 imaju pokazuju na istu vrijednost ako promjenimo vrijednost jednom promjenimo vrijednost na oba
 
         }
 
         public static void IspišiStrukture()
         {
-            // TODO:025 Promijeniti poziv konstruktora tako da ispis bude "MojaStruktura"
             MojaStruktura ms1 = new MojaStruktura();
             MojaStruktura ms2 = ms1;
-            // TODO:026 Pozvati metodu IspišiČlan za obje instance
-
+            ms1.IspišiČlan();
+            ms2.IspišiČlan();
 
             Console.WriteLine();
-            // TODO:027 Otkomentirati donju naredbu.
-            //ms2.tekst = "MyStruct";
-            // TODO:028 Ponovno pozvati metodu IspišiČlan za obje instance te obrazložiti rezultat.
-
+            ms2.tekst = "MyStruct";
+            //pozivom metoda overridamo upisano tj. MyStruct postaje Moja struktura, pa dodajemo novu metodu sa argumentom
+            ms1.IspišiČlan(ms1.tekst);
+            ms2.IspišiČlan(ms2.tekst);
+            
 
         }
 
