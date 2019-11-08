@@ -2,7 +2,7 @@
 
 namespace Vsite.CSharp.DefiniranjeTipa
 {
-    class JavnaBazna
+    public class JavnaBazna
     {
         public void IspišiMe()
         {
@@ -10,7 +10,7 @@ namespace Vsite.CSharp.DefiniranjeTipa
         }
     }
 
-    class Bazna
+    public class Bazna
     {
         public void IspišiMe()
         {
