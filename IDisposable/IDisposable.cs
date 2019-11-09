@@ -12,6 +12,10 @@ namespace Vsite.CSharp.DefiniranjeTipa
             
             
             sw.Dispose();
+            using(StreamWriter sw1 = new StreamWriter(imeDatoteke))
+            {
+
+            }
             
         }
 
