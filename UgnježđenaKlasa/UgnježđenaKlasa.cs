@@ -12,6 +12,7 @@ namespace Vsite.CSharp.DefiniranjeTipa
             IzvedenoGnijezdo ig = new IzvedenoGnijezdo();
             ig.PredstaviSe();
 
+            
             Console.WriteLine("GOTOVO!!!");
             Console.ReadKey();
         }
