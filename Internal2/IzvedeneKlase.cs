@@ -25,7 +25,8 @@ namespace Vsite.CSharp.DefiniranjeTipa
 
         public void IspišiMe()
         {
-            
+            InternaBazna objekt = new InternaBazna();
+            objekt.IspišiMe();
         }
     }
 }
