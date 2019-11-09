@@ -36,8 +36,8 @@ namespace Vsite.CSharp.DefiniranjeTipa
         // TODO:041 Napisati implementaciju metode PredstaviSe koja će pozvati metodu PredstaviSe iz klase Ugnježđena
         public void PredstaviSe()
         {
-            IzvedenoGnijezdo ig = new IzvedenoGnijezdo();
-            ig.PredstaviSe();
+            
+            
         }
     }
 }
