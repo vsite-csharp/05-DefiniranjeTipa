@@ -16,8 +16,8 @@ namespace Vsite.CSharp.DefiniranjeTipa
         }
         ~KlasaSDestruktorom()
         {
-            Console.WriteLine($"Destruktor objekta br. {RedniBroj}.");
-            Debug.WriteLine($"Destruktor objekta br. {RedniBroj}.");
+            Console.WriteLine($"Destruktor objekta br. {RedniBroj}");
+            Debug.WriteLine($"Destruktor objekta br. {RedniBroj}");
         }
 
         public readonly int RedniBroj; // redni broj objekta
