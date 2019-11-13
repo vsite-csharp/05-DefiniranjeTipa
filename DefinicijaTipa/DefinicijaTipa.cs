@@ -3,37 +3,73 @@
 namespace Vsite.CSharp.DefiniranjeTipa
 {
     class MojaKlasa
-    {
-        // TODO:010 Dodati privatno polje (field - podatkovni član) "broj" tipa int i dodijeliti mu vrijednost 5
+    {      
+       
+        
+       
+        private int broj=5;
+           
+        public MojaKlasa(int broj)
+        {
+            this.broj = broj;
 
-
-        // TODO:011 Zadati metodu IspišiČlan tipa void i u njoj dodati naredbu koja će ispisati podatkovni član "broj".
+        }
+        public int Broj
+        {
+            get { return broj; }
+            set { this.broj = value; }
+          
+        }
+        public void IspišiČlan()
+        {
+            Console.WriteLine(broj);
+        }
 
     }
 
 
     struct MojaStruktura
     {
-        // TODO:013 Dodati privatno polje (podatkovni član) "tekst" tipa string i dodijeliti mu vrijednost "MojaStruktura"
-
-
-        // TODO:014 Zadati metodu IspišiČlan tipa void i u njoj dodati naredbu koja će ispisati podatkovni član "tekst".
-
+      
+        //private string tekst = "MojaStruktura";
+        private string tekst;
+        public MojaStruktura(string tekst)
+        {
+            this.tekst = tekst;
+        }
+        public string Tekst 
+        {
+            get
+            {
+                return tekst;
+            }
+           
+           
+        }
+      
+        public void IspišiČlan()
+        {
+            Console.WriteLine(tekst);
+        }
     }
-
 
     class DefinicijaTipa
     {
         public static void IspišiČlanKlase()
         {
-            // TODO:012 Inicijalizirati objekt tipa MojaKlasa i pozvati njegovu metodu IspišiČlan
+           
+            int broj = 5;
+            MojaKlasa definicijaTipa = new MojaKlasa(broj);
+            definicijaTipa.IspišiČlan();
 
         }
 
         public static void IspišiČlanStrukture()
         {
-            // TODO:015 Inicijalizirati objekt tipa MojaStruktura i pozvati njegovu metodu IspišiČlan koja treba ispisati "MojaStruktura".
-
+            
+            string tekst = "MojaStruktura";
+            MojaStruktura struk = new MojaStruktura(tekst);
+            struk.IspišiČlan();
         }
 
         static void Main(string[] args)
