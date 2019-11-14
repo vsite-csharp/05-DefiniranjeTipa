@@ -2,15 +2,23 @@
 
 namespace Vsite.CSharp.DefiniranjeTipa
 {
-    class SaStatičkimKonstruktorom1
-    {
-        // TODO:091 Dodati prazni konstruktor koji će ispisati poruku "SaStatičkimKonstruktorom1.KonstruktorKlase"
+	class SaStatičkimKonstruktorom1
+	{
+		public SaStatičkimKonstruktorom1()
 
-        // TODO:092 Dodati statički konstruktor koji će ispisati poruku "SaStatičkimKonstruktorom1.StatičkiKonstruktor"
+		{
+			Console.WriteLine("SaStatickimKonstruktorom1.KonstrokKlase");
+		}
 
-        // TODO:093 Pokrenuti program i pogledati ispis
+		static SaStatičkimKonstruktorom1()
+		{
+			Console.WriteLine("SaStatičkimKonstruktorom1.StatičkiKonstruktor");
+		}
 
-        public static void Metoda1()
+
+		// TODO:093 Pokrenuti program i pogledati ispis
+
+		public static void Metoda1()
         {
             Console.WriteLine("SaStatičkimKonstruktorom1.Metoda1");
         }
