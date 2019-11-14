@@ -33,14 +33,12 @@ namespace Vsite.CSharp.DefiniranjeTipa
     {
         public static void IspišiČlanKlase()
         {
-            // TODO:012 Inicijalizirati objekt tipa MojaKlasa i pozvati njegovu metodu IspišiČlan
             MojaKlasa mk = new MojaKlasa();
             mk.IspišiČlan();
         }
 
         public static void IspišiČlanStrukture()
         {
-            // TODO:015 Inicijalizirati objekt tipa MojaStruktura i pozvati njegovu metodu IspišiČlan koja treba ispisati "MojaStruktura".
             MojaStruktura ms = new MojaStruktura("MojaStruktura");
             ms.IspišiČlan();
         }
