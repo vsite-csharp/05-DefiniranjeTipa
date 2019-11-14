@@ -13,7 +13,5 @@ namespace Vsite.CSharp.DefiniranjeTipa
             Prezime = prezime;
             DatumRođenja = datumRođenja;
         }
-        // TODO:062 Promijeniti prazan konstruktor tako da prima 3 argumenta (ime, prezime, datumRođenja) kojima se inicijaliziraju članovi objekta.
-
     }
 }
