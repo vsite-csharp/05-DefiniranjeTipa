@@ -6,6 +6,9 @@ namespace Vsite.CSharp.DefiniranjeTipa
     {
         public static void PozivPodrazumijevanogKonstruktora()
         {
+            Udaljenost d = new Udaljenost();
+            Console.WriteLine(d.Broj);
+            Console.WriteLine(d.Jedinica);
             // TODO:070 Stvoriti objekt strukture Udaljenost i ispisati vrijednosti članova.
 
 
