@@ -12,7 +12,7 @@ namespace Vsite.CSharp.DefiniranjeTipa
         }
         static SaStatičkimKonstruktorom1()
         {
-            Console.WriteLine("SaStatičkimKonstruktorom1.StatičkiKonstruktor")
+            Console.WriteLine("SaStatičkimKonstruktorom1.StatičkiKonstruktor");
         }
 
         public static void Metoda1()
