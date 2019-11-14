@@ -26,7 +26,7 @@ namespace Vsite.CSharp.DefiniranjeTipa
             
             DateTime datum1 = new DateTime(godina1, mjesec1, dan1);
             DateTime datum2 = new DateTime(godina2, mjesec2, dan2);
-            TimeSpan period = datum1 - datum2;
+            TimeSpan period = datum2 - datum1;
             return period.Days;
         }
 
