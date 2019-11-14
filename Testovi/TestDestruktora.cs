@@ -7,7 +7,7 @@ namespace Vsite.CSharp.DefiniranjeTipa.Testovi
     public class TestDestruktora : ConsoleTest
     {
         [TestMethod]
-        public void Destruktor_PrilikomUništenjaObjektaIspisujeSePoruka()
+        public void PrilikomUništenjaObjektaIspisujeSePoruka()
         {
             KlasaSDestruktorom ksd = new KlasaSDestruktorom();
             Assert.AreEqual("Konstruktor objekta br. 1", cw.GetString());

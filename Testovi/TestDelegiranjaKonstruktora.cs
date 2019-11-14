@@ -7,7 +7,7 @@ namespace Vsite.CSharp.DefiniranjeTipa.Testovi
     {
 
         [TestMethod]
-        public void DelegiranjeKonstruktora_PozivKonstruktoraSDvaArgumenta()
+        public void PozivKonstruktoraSDvaArgumenta()
         {
             DelegiranjeKonstruktora.StvoriInstancuIzvedeneKlaseKonstruktoromSDvaArgumenta(5, 7);
             Assert.AreEqual("Bazna.Bazna(5)", cw.GetString());
@@ -17,7 +17,7 @@ namespace Vsite.CSharp.DefiniranjeTipa.Testovi
         }
 
         [TestMethod]
-        public void DelegiranjeKonstruktora_PozivKonstruktoraSJednimArgumentom()
+        public void PozivKonstruktoraSJednimArgumentom()
         {
             DelegiranjeKonstruktora.StvoriInstancuIzvedeneKlaseKonstruktoromSJednimArgumentom(5);
             Assert.AreEqual("Bazna.Bazna(5)", cw.GetString());

@@ -37,7 +37,7 @@ namespace Vsite.CSharp.DefiniranjeTipa.Testovi
     public class TestKorištenjaObjekta : ConsoleTest
     {
         [TestMethod]
-        public void KorištenjeObjekta_IspišiTrenutniDatumVrijemeIspisujeTrenutnuVrijednost()
+        public void IspišiTrenutniDatumVrijemeIspisujeTrenutnuVrijednost()
         {
             VremenskiInterval vi = new VremenskiInterval();
             KorištenjeObjekata.IspišiTrenutniDatumVrijeme();
@@ -50,7 +50,7 @@ namespace Vsite.CSharp.DefiniranjeTipa.Testovi
         }
 
         [TestMethod]
-        public void KorištenjeObjekta_IspišiDanašnjiDatumIspisujeDanašnjiDatum()
+        public void IspišiDanašnjiDatumIspisujeDanašnjiDatum()
         {
             VremenskiInterval vi = new VremenskiInterval();
             KorištenjeObjekata.IspišiDanašnjiDatum();
@@ -61,7 +61,7 @@ namespace Vsite.CSharp.DefiniranjeTipa.Testovi
         }
 
         [TestMethod]
-        public void KorištenjeObjekta_IspišiTrenutnoVrijemeIspisujeVrijednost()
+        public void IspišiTrenutnoVrijemeIspisujeVrijednost()
         {
             VremenskiInterval vi = new VremenskiInterval();
             KorištenjeObjekata.IspišiTrenutnoVrijeme();
@@ -72,13 +72,13 @@ namespace Vsite.CSharp.DefiniranjeTipa.Testovi
         }
 
         [TestMethod]
-        public void KorištenjeObjekta_IzračunajBrojDanaIzmeđuDvaDatumaVraća365ZaNeprestupnuGodinu()
+        public void IzračunajBrojDanaIzmeđuDvaDatumaVraća365ZaNeprestupnuGodinu()
         {
             Assert.AreEqual(365, KorištenjeObjekata.IzračunajBrojDanaIzmeđuDvaDatuma(2001, 1, 1, 2002, 1, 1));
         }
 
         [TestMethod]
-        public void KorištenjeObjekta_IzračunajBrojDanaIzmeđuDvaDatumaVraća366ZaPrestupnuGodinu()
+        public void IzračunajBrojDanaIzmeđuDvaDatumaVraća366ZaPrestupnuGodinu()
         {
             Assert.AreEqual(366, KorištenjeObjekata.IzračunajBrojDanaIzmeđuDvaDatuma(2004, 1, 1, 2005, 1, 1));
         }

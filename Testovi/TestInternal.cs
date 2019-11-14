@@ -6,21 +6,21 @@ namespace Vsite.CSharp.DefiniranjeTipa.Testovi
     public class TestInternal : ConsoleTest
     {
         [TestMethod]
-        public void Internal_IzvedenaIzJavneBazne_IspišiMePozivaMetoduUBaznojKlasi()
+        public void IzvedenaIzJavneBazne_IspišiMePozivaMetoduUBaznojKlasi()
         {
             Internal.IspišiIzvedenuIzJavne();
             Assert.AreEqual("JavnaBazna", cw.GetString());
         }
 
         [TestMethod]
-        public void Internal_IzvedenaIzBazne_IspišiMePozivaMetoduUBaznojKlasi()
+        public void IzvedenaIzBazne_IspišiMePozivaMetoduUBaznojKlasi()
         {
             Internal.IspišiIzvedenuIzBazne();
             Assert.AreEqual("???Bazna", cw.GetString());
         }
 
         [TestMethod]
-        public void Internal_IzvedenaIzInterneBazneLokalneIspišiMePozivaMetoduUBaznojKlasi()
+        public void IzvedenaIzInterneBazneLokalneIspišiMePozivaMetoduUBaznojKlasi()
         {
             IzvedenaIzInterneBazne izvedanaIzInterneBazne = new IzvedenaIzInterneBazne();
             izvedanaIzInterneBazne.IspišiMe();

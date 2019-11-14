@@ -6,7 +6,7 @@ namespace Vsite.CSharp.DefiniranjeTipa.Testovi
     public class TestKonstruktoraStrukture : ConsoleTest
     {
         [TestMethod]
-        public void KonstruktorStrukture_TestPozivaPraznogKonstruktora()
+        public void PozivPraznogKonstruktora()
         {
             KonstruktorStrukture.PozivPodrazumijevanogKonstruktora();
             Assert.AreEqual(0.0, cw.GetDouble());
@@ -14,7 +14,7 @@ namespace Vsite.CSharp.DefiniranjeTipa.Testovi
         }
 
         [TestMethod]
-        public void KonstruktorStrukture_TestPozivaKonstruktoraSDvaArgumenta()
+        public void PozivKonstruktoraSDvaArgumenta()
         {
             KonstruktorStrukture.PozivKonstruktoraSDvaArgumenta(3, JedinicaDuljine.Kilometar);
             Assert.AreEqual(3.0, cw.GetDouble());
@@ -22,7 +22,7 @@ namespace Vsite.CSharp.DefiniranjeTipa.Testovi
         }
 
         [TestMethod]
-        public void KonstruktorStrukture_TestPozivaKonstruktoraSJednimArgumentom()
+        public void PozivKonstruktoraSJednimArgumentom()
         {
             KonstruktorStrukture.PozivKonstruktoraSJednimArgumentom(3);
             Assert.AreEqual(3.0, cw.GetDouble());

@@ -2,7 +2,7 @@
 
 namespace Vsite.CSharp.DefiniranjeTipa
 {
-    class JavnaBazna
+    public class JavnaBazna
     {
         public void IspišiMe()
         {

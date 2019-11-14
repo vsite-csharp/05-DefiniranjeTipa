@@ -8,7 +8,7 @@ namespace Vsite.CSharp.DefiniranjeTipa.Testovi
         static bool pozvanStatičkiKonstruktorBazneKlase = false;
 
         [TestMethod]
-        public void StatičkiKonstruktor_PrijePozivaStatičkeMetodeIzvodiSeStatičkiKonstruktor()
+        public void PrijePozivaStatičkeMetodeIzvodiSeStatičkiKonstruktor()
         {
             StatičkiKonstruktor.PozoviSamoStatičkuMetodu();
             if (pozvanStatičkiKonstruktorBazneKlase == false)
@@ -21,7 +21,7 @@ namespace Vsite.CSharp.DefiniranjeTipa.Testovi
         }
 
         [TestMethod]
-        public void StatičkiKonstruktor_PrijeStvaranjaObjektaIzvodiSeStatičkiKonstruktor()
+        public void PrijeStvaranjaObjektaIzvodiSeStatičkiKonstruktor()
         {
             StatičkiKonstruktor.PozoviNestatičkuMetodu();
             Assert.AreEqual("SaStatičkimKonstruktorom2.StatičkiKonstruktor", cw.GetString());

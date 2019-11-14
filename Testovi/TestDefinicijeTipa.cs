@@ -6,14 +6,14 @@ namespace Vsite.CSharp.DefiniranjeTipa.Testovi
     public class TestDefinicijeTipa : ConsoleTest
     {
         [TestMethod]
-        public void DefinicijaTipa_MojaKlasaIspišiČlanIspisuje5()
+        public void MojaKlasaIspišiČlanIspisuje5()
         {
             DefinicijaTipa.IspišiČlanKlase();
             Assert.AreEqual(5, cw.GetInt());
         }
 
         [TestMethod]
-        public void DefinicijaTipa_MojaStrukturaIspišiČlanIspisujeMojaStruktura()
+        public void MojaStrukturaIspišiČlanIspisujeMojaStruktura()
         {
             DefinicijaTipa.IspišiČlanStrukture();
             Assert.AreEqual("MojaStruktura", cw.GetString());
