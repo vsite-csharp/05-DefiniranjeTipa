@@ -23,10 +23,14 @@ namespace Vsite.CSharp.DefiniranjeTipa
             MojaStruktura ms1 = new MojaStruktura();
             MojaStruktura ms2 = ms1;
             // TODO:022 Pozvati metodu IspišiČlan za obje instance
+            ms1.IspišiČlan();
+            ms2.IspišiČlan();
 
             Console.WriteLine();
-            // TODO:023 Otkomentirati donju naredbu.
-            //ms2.tekst = "MyStruct";
+            ms2.tekst="MyStruct";
+            ms1.IspisiClan();
+            ms2.IspisiClan();
+            ms2.tekst = "MyStruct";
             // TODO:024 Ponovno pozvati metodu IspišiČlan za obje instance te obrazložiti rezultat.
 
         }

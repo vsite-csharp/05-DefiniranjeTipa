@@ -22,10 +22,11 @@ namespace Vsite.CSharp.DefiniranjeTipa
             this.tekst = tekst;
         }
         private string tekst;
-        public void IspisiClan() {
+        public void IspišiČlan()
+        {
             Console.WriteLine(tekst);
+        }
     }
-
 
     class DefinicijaTipa
     {
