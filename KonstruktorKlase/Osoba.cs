@@ -6,10 +6,21 @@ namespace Vsite.CSharp.DefiniranjeTipa
     {
         public readonly string Ime;
         public readonly string Prezime;
-        public readonly DateTime DatumRođenja;
+        public readonly string DatumRođenja;
 
-        // TODO:061 Dodati prazni konstruktor koji inicijalizira članove objekta na neku vrijednost, ponovno pokrenuti program i provjeriti ispis.
-
-        // TODO:062 Promijeniti prazan konstruktor tako da prima 3 argumenta (ime, prezime, datumRođenja) kojima se inicijaliziraju članovi objekta.
-    }
+        
+		public Osoba()
+		{
+			Ime = "Zarko";
+			Prezime = "Zivancic";
+			DatumRođenja = "23.3.1994";
+		}
+		public Osoba(string i,string p,string d)
+		{
+			Ime = i;
+			Prezime = p;
+			DatumRođenja = d;
+		}
+		
+	}
 }
