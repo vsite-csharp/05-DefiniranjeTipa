@@ -17,7 +17,6 @@ namespace Vsite.CSharp.DefiniranjeTipa
 
         public static void StvoriObjektZadanimKonstruktorom(string ime, string prezime, DateTime datumRođenja)
         {
-            // TODO:063 Stvoriti objekt klase Osoba pozivom tog konstruktora i ispisati vrijednosti članova Ime, Prezime, DatumRođenja
             DateTime datum = new DateTime(1765, 12, 3);
 
             Osoba o1 = new Osoba(ime, prezime, datumRođenja);
