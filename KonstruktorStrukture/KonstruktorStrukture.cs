@@ -6,6 +6,7 @@ namespace Vsite.CSharp.DefiniranjeTipa
     {
         public static void PozivPodrazumijevanogKonstruktora()
         {
+
             // TODO:070 Stvoriti objekt strukture Udaljenost i ispisati vrijednosti članova.
 
 
