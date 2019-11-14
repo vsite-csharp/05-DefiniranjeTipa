@@ -16,6 +16,7 @@ namespace Vsite.CSharp.DefiniranjeTipa
 
         }
 
+        // TODO:064 Pokrenuti testove i provjeriti prolazi li test u grupi TestKonstruktoraKlase
 
         static void Main(string[] args)
         {

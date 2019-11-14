@@ -11,7 +11,7 @@ namespace Vsite.CSharp.DefiniranjeTipa
                 Console.WriteLine("Ugnježđena");
             }
 
-            public void PredstaviSe()
+            protected void PredstaviSe()
             {
                 Console.WriteLine("Ja sam klasa Ugnježđena");
             }
@@ -35,7 +35,7 @@ namespace Vsite.CSharp.DefiniranjeTipa
         // (po potrebi promijeniti pravo pristupa za klasu Ugnježđena)
         public void PredstaviSe()
         {
-
+            
         }
     }
 }

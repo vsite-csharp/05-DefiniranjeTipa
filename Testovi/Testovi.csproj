@@ -58,7 +58,7 @@
     <Compile Include="TestIDisposable.cs" />
     <Compile Include="TestInternal.cs" />
     <Compile Include="TestKonstruktoraStrukture.cs" />
-    <Compile Include="TestKonstruktorKlase.cs" />
+    <Compile Include="TestKonstruktoraKlase.cs" />
     <Compile Include="TestKorištenjaObjekta.cs" />
     <Compile Include="TestStatičkihČlanova.cs" />
     <Compile Include="TestStatičkogKonstruktora.cs" />

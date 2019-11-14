@@ -1,4 +1,5 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
+using System.Reflection;
 
 namespace Vsite.CSharp.DefiniranjeTipa.Testovi
 {
@@ -20,10 +21,14 @@ namespace Vsite.CSharp.DefiniranjeTipa.Testovi
         }
 
         [TestMethod]
-        public void IzvedenaIzInterneBazneLokalneIspišiMePozivaMetoduUBaznojKlasi()
+        public void IzvedenaIzInterneBazneIspišiMePozivaMetoduIzInterneBazne()
         {
             IzvedenaIzInterneBazne izvedanaIzInterneBazne = new IzvedenaIzInterneBazne();
-            izvedanaIzInterneBazne.IspišiMe();
+
+            var metoda = izvedanaIzInterneBazne.GetType().GetMethod("IspišiMe", BindingFlags.Public | BindingFlags.Instance);
+            Assert.IsNotNull(metoda);
+            metoda.Invoke(izvedanaIzInterneBazne, new object[] { });
+
             Assert.AreEqual("InternaBazna", cw.GetString());
         }
     }

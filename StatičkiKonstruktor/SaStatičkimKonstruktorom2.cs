@@ -10,6 +10,7 @@ namespace Vsite.CSharp.DefiniranjeTipa
 
         // TODO:096 Ponovno pokrenuti program i pogledati ispis
 
+        // TODO:097 Pokrenuti testove i provjeriti da oba testa u grupi TestStatičkogKonstruktora prolaze.
         public void Metoda2()
         {
             Console.WriteLine("SaStatičkimKonstruktorom2.Metoda2");

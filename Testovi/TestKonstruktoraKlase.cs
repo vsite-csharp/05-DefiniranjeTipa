@@ -4,7 +4,7 @@ using System;
 namespace Vsite.CSharp.DefiniranjeTipa.Testovi
 {
     [TestClass]
-    public class TestKonstruktorKlase : ConsoleTest
+    public class TestKonstruktoraKlase : ConsoleTest
     {
         [TestMethod]
         public void KonstruktorSArgumentimaInicijaliziraOsobu()

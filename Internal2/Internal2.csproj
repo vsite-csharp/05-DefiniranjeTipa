@@ -37,9 +37,6 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
     <ProjectReference Include="..\Internal1\Internal1.csproj">
       <Project>{a39d264c-c52c-4463-830f-134ca7376983}</Project>
       <Name>Internal1</Name>

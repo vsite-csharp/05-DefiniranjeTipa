@@ -2,14 +2,14 @@
 
 namespace Vsite.CSharp.DefiniranjeTipa
 {
-    // TODO:020 Prekopirati kod strukture iz prethodnog primjera i promijeniti pravo pristupa članu "tekst" u public
+    // TODO:020 Prekopirati kod strukture iz prethodnog primjera i promijeniti pravo pristupa članu "tekst" u public.
     struct MojaStruktura
     {
 
 
     }
 
-    // TODO:025 Prekopirati kod klase iz prethodnog primjera i promijeniti pravo pristupa članu "broj" u public
+    // TODO:025 Prekopirati kod klase iz prethodnog primjera i promijeniti pravo pristupa članu "broj" u public.
     class MojaKlasa
     {
 
@@ -19,10 +19,10 @@ namespace Vsite.CSharp.DefiniranjeTipa
     {
         public static void IspišiStrukture()
         {
-            // TODO:021 Promijeniti poziv konstruktora tako da ispis bude "MojaStruktura"
+            // TODO:021 Promijeniti poziv konstruktora tako da ispis bude "MojaStruktura".
             MojaStruktura ms1 = new MojaStruktura();
             MojaStruktura ms2 = ms1;
-            // TODO:022 Pozvati metodu IspišiČlan za obje instance
+            // TODO:022 Pozvati metodu IspišiČlan za obje instance (ms1 i ms2).
 
             Console.WriteLine();
             // TODO:023 Otkomentirati donju naredbu.
@@ -43,6 +43,8 @@ namespace Vsite.CSharp.DefiniranjeTipa
             // TODO:028 Ponovno pozvati metodu IspišiČlan za obje instance te obrazložiti rezultat.
 
         }
+
+        // TODO:029 Pokrenuti testove i provjeriti prolaze li oba testa u grupi TestClass_Struct.
 
         static void Main(string[] args)
         {
