@@ -19,7 +19,6 @@ namespace Vsite.CSharp.StatičkiČlanovi
             instanca = brojac;
         }
 
-        // TODO:054 U metodu dodati naredbu koja će ispisati vrijednost člana "instanca"
         public void IspišiRedniBrojObjekta()
         {
             Console.WriteLine(instanca);
