@@ -9,12 +9,12 @@ namespace Vsite.CSharp.DefiniranjeTipa
         public Izvedena(int a,int b) : base(a)
         {
             B = b;
-            Console.WriteLine(string.Format("Izvedena.Izvedena({0}, {1}", a, b));
+            Console.WriteLine(string.Format("Izvedena.Izvedena({0}, {1})", a, b));
         }
 
         public Izvedena(int a) : this(a,0)
         {
-            Console.WriteLine(string.Format("Izvedena.Izvedena({0}", a));
+            Console.WriteLine(string.Format("Izvedena.Izvedena({0})", a));
         }
     }
 }
