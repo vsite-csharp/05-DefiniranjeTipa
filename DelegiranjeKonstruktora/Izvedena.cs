@@ -12,8 +12,5 @@
         {
             System.Console.WriteLine(string.Format("Izvedena.Izvedena({0})", a));
         }
-
-        // TODO:085 U tijelo konstruktora dodati naredbu za ispis: Console.WriteLine(string.Format("Izvedena.Izvedena({0})", a));
-
     }
 }
