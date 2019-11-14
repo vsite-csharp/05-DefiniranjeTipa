@@ -6,13 +6,20 @@ namespace Vsite.CSharp.DefiniranjeTipa
     {
         public static void StvoriObjektPodrazumijevanimKonstruktorom()
         {
-            // TODO:060 Stvoriti objekt klase Osoba i ispisati vrijednosti članova Ime, Prezime, DatumRođenja
+            Osoba osoba1 = new Osoba("Jura", "Stublić",DateTime.MinValue);
+            Console.WriteLine(osoba1.Ime);
+            Console.WriteLine(osoba1.Prezime);
+            Console.WriteLine(osoba1.DatumRođenja);
+
 
         }
 
         public static void StvoriObjektZadanimKonstruktorom(string ime, string prezime, DateTime datumRođenja)
         {
-            // TODO:063 Stvoriti objekt klase Osoba pozivom tog konstruktora i ispisati vrijednosti članova Ime, Prezime, DatumRođenja
+            Osoba osoba = new Osoba(ime, prezime, datumRođenja);
+            Console.WriteLine(osoba.Ime);
+            Console.WriteLine(osoba.Prezime);
+            Console.WriteLine(osoba.DatumRođenja);
 
         }
 
