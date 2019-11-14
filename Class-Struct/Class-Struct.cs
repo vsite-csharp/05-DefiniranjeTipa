@@ -44,7 +44,6 @@ namespace Vsite.CSharp.DefiniranjeTipa
 
         public static void IspišiStrukture()
         {
-            // TODO:025 Promijeniti poziv konstruktora tako da ispis bude "MojaStruktura"
             MojaStruktura ms1 = new MojaStruktura("MojaStruktura");
             MojaStruktura ms2 = ms1;
             ms1.IspisiClan();
@@ -53,9 +52,7 @@ namespace Vsite.CSharp.DefiniranjeTipa
 
 
             Console.WriteLine();
-            // TODO:027 Otkomentirati donju naredbu.
             ms2.tekst = "MyStruct";
-            // TODO:028 Ponovno pozvati metodu IspišiČlan za obje instance te obrazložiti rezultat.
             ms1.IspisiClan();
             ms2.IspisiClan();
 

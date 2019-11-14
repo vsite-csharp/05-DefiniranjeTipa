@@ -22,7 +22,6 @@ namespace Vsite.CSharp.DefiniranjeTipa
             }
         }
 
-        // TODO:040 Napisati implementaciju metode IspišiMe koja će pozvati metodu IspišiMe iz klase Ugnježđena
         public void IspišiMe()
         {
         }
@@ -31,7 +30,6 @@ namespace Vsite.CSharp.DefiniranjeTipa
 
     class IzvedenoGnijezdo : Gnijezdo
     {
-        // TODO:041 Napisati implementaciju metode PredstaviSe koja će pozvati metodu PredstaviSe iz klase Ugnježđena
         public void PredstaviSe()
         {
 
