@@ -4,10 +4,8 @@ namespace Vsite.CSharp.DefiniranjeTipa
 {
     class MojaKlasa
     {
-        // TODO:010 Dodati privatno polje (field - podatkovni član) "broj" tipa int i dodijeliti mu vrijednost 5
         private int broj =5;
 
-        // TODO:011 Zadati metodu IspišiČlan tipa void i u njoj dodati naredbu koja će ispisati podatkovni član "broj".
         public void IspišiČlan()
         {
             Console.WriteLine(broj);
