@@ -6,16 +6,16 @@ namespace Vsite.CSharp.DefiniranjeTipa
     {
         public readonly string Ime;
         public readonly string Prezime;
-        public readonly string DatumRođenja;
+        public readonly DateTime DatumRođenja;
 
         
 		public Osoba()
 		{
 			Ime = "Zarko";
 			Prezime = "Zivancic";
-			DatumRođenja = "23.3.1994";
+			DatumRođenja = new DateTime(1971, 7, 4);
 		}
-		public Osoba(string i,string p,string d)
+		public Osoba(string i,string p,DateTime d)
 		{
 			Ime = i;
 			Prezime = p;

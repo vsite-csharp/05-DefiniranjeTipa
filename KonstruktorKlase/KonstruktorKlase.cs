@@ -15,7 +15,7 @@ namespace Vsite.CSharp.DefiniranjeTipa
 
         }
 
-        public static void StvoriObjektZadanimKonstruktorom(string ime, string prezime, string datumRođenja)
+        public static void StvoriObjektZadanimKonstruktorom(string ime, string prezime, DateTime datumRođenja)
         {
 			
 			Osoba os = new Osoba(ime,prezime,datumRođenja);
@@ -30,7 +30,7 @@ namespace Vsite.CSharp.DefiniranjeTipa
         {
             StvoriObjektPodrazumijevanimKonstruktorom();
 
-            StvoriObjektZadanimKonstruktorom("Hrvoje", "Horvat", "7.4.1971");
+            StvoriObjektZadanimKonstruktorom("Hrvoje", "Horvat", new DateTime(1971, 7, 4));
 
             Console.WriteLine("GOTOVO!!!");
             Console.ReadKey();
