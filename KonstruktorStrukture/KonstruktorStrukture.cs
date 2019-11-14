@@ -6,25 +6,31 @@ namespace Vsite.CSharp.DefiniranjeTipa
     {
         public static void PozivPodrazumijevanogKonstruktora()
         {
-            // TODO:070 Stvoriti objekt strukture Udaljenost i ispisati vrijednosti članova.
+            Udaljenost u1 = new Udaljenost();
 
+            Console.WriteLine(u1.Broj);
+            Console.WriteLine(u1.Jedinica);
 
-            // TODO:072 Stvoriti objekt pozivom praznog konstruktora te ispisati vrijednosti članova.
+            Udaljenost u2 = new Udaljenost();
 
-
+            Console.WriteLine(u2.Broj);
+            Console.WriteLine(u2.Jedinica);
         }
 
         public static void PozivKonstruktoraSDvaArgumenta(double broj, JedinicaDuljine jedinica)
         {
-            // TODO:074 Stvoriti objekt pozivom konstruktora koji prima dva argumenta te ispisati vrijednosti članova.
+            Udaljenost u3 = new Udaljenost(broj,jedinica);
 
-
+            Console.WriteLine(u3.Broj);
+            Console.WriteLine(u3.Jedinica);
         }
 
         public static void PozivKonstruktoraSJednimArgumentom(double broj)
         {
-            // TODO:076 Stvoriti objekt pozivom konstruktora s jednim argumentom te ispisati vrijednosti članova.
+            Udaljenost u4 = new Udaljenost(broj);
 
+            Console.WriteLine(u4.Broj);
+            Console.WriteLine(u4.Jedinica);
         }
 
         static void Main(string[] args)
