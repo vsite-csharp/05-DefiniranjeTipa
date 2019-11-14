@@ -17,7 +17,7 @@ namespace Vsite.CSharp.DefiniranjeTipa
     struct MojaStruktura
     {
 
-		public MojaStruktura(string tekst) { this.tekst = "Moja struktura"; }
+		public MojaStruktura(string tekst) { this.tekst = tekst; }
 
 
 		private string tekst;
