@@ -2,7 +2,6 @@
 
 namespace Vsite.CSharp.DefiniranjeTipa
 {
-    // TODO:020 Prekopirati kod strukture iz prethodnog primjera i promijeniti pravo pristupa članu "tekst" u public
     struct MojaStruktura
     {      
         public MojaStruktura(string tekst)
