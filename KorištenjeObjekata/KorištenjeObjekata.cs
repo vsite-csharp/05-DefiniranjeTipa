@@ -6,26 +6,27 @@ namespace Vsite.CSharp.DefiniranjeTipa
 {
     class KorištenjeObjekata
     {
-        // TODO:000 Ispisati trenutni datum i vrijeme pomoću statičkog svojstva DateTime.Now
+        
         public static void IspišiTrenutniDatumVrijeme()
         {
-
+            Console.WriteLine(DateTime.Now);
         }
 
-        // TODO:001 Ispisati današnji datum pomoću statičkog svojstva DateTime.Now i metode DateTime.ToShortDateString
+        
         public static void IspišiDanašnjiDatum()
         {
-
+            Console.WriteLine(DateTime.Now.ToShortDateString());
         }
 
-        // TODO:002 Ispisati trenutno vrijeme pomoću statičkog svojstva DateTime.Now i metode DateTime.ToShortTimeString
+        
         public static void IspišiTrenutnoVrijeme()
         {
-
+             Console.WriteLine(DateTime.Now.ToShortTimeString());
         }
 
         public static int IzračunajBrojDanaIzmeđuDvaDatuma(int godina1, int mjesec1, int dan1, int godina2, int mjesec2, int dan2)
         {
+
             // TODO:003 Stvoriti objekt "datum1" tipa DateTime tako da se njegovom konstruktoru proslijede godina1, mjesec1 i dan1.
 
             // TODO:004 Stvoriti objekt "datum2" tipa DateTime tako da se njegovom konstruktoru proslijede godina2, mjesec2 i dan2.
