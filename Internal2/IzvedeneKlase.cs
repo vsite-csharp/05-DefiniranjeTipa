@@ -2,11 +2,11 @@
 
 namespace Vsite.CSharp.DefiniranjeTipa
 {
-    class IzvedenaIzJavneBazne // : JavnaBazna
+    class IzvedenaIzJavneBazne  : InternaBazna
     {
     }
 
-    class IzvedenaIzBazne // : Bazna
+    class IzvedenaIzBazne : IzvedenaIzInterneBazne
     {
     }
 
