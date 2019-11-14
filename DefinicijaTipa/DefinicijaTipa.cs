@@ -21,6 +21,14 @@ namespace Vsite.CSharp.DefiniranjeTipa
         private string tekst;
         internal MojaStruktura(string tekst) => this.tekst = tekst;
 
+        //S predavanja
+        
+        //public MojaStruktura(string tekst)
+        //{
+        //    this.tekst = tekst;
+        //}
+        //private string tekst;
+
         // TODO:014 Zadati metodu IspišiČlan tipa void i u njoj dodati naredbu koja će ispisati podatkovni član "tekst".
         internal void IspišiČlan()
         {
@@ -42,6 +50,7 @@ namespace Vsite.CSharp.DefiniranjeTipa
         {
             // TODO:015 Inicijalizirati objekt tipa MojaStruktura i pozvati njegovu metodu IspišiČlan koja treba ispisati "MojaStruktura".
             MojaStruktura ms = new MojaStruktura("MojaStruktura");
+            //Može i var umjesto tipa
             ms.IspišiČlan();
         }
 
