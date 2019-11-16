@@ -8,7 +8,6 @@ namespace Vsite.CSharp.DefiniranjeTipa
         public static void StvoriInstancuIzvedeneKlaseKonstruktoromSDvaArgumenta(int a, int b)
         {
             Izvedena i = new Izvedena(a, b);
-
             Console.WriteLine(i.A);
             Console.WriteLine(i.B);
         }

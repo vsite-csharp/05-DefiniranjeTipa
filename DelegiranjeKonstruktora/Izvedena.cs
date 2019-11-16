@@ -13,7 +13,7 @@ namespace Vsite.CSharp.DefiniranjeTipa
 
         public Izvedena(int a) : this(a, 0)
         {
-            Console.WriteLine(string.Format("Izvedena.Izvedena({0}, {1})", A, B));
+            Console.WriteLine(string.Format("Izvedena.Izvedena({0})", a));
         }
     }
 }
