@@ -18,8 +18,10 @@ namespace Vsite.CSharp.DefiniranjeTipa
         static void Main(string[] args)
         {
             PozoviSamoStatičkuMetodu();
+            Console.WriteLine("-----");
             Console.WriteLine();
             PozoviNestatičkuMetodu();
+            Console.WriteLine("-----");
 
             Console.WriteLine("GOTOVO!!!");
             Console.ReadKey();
