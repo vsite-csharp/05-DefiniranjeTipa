@@ -15,8 +15,8 @@ namespace Vsite.CSharp.DefiniranjeTipa
             Prezime = "Bandić";
             DatumRođenja = new DateTime(1756,12,3);
             /*Nakon gornjih izmjena ispis: Milan
-Bandic
-3.12.1756. 0:00:00*/
+                Bandic
+                3.12.1756. 0:00:00*/
         }
         // TODO:062 Promijeniti prazan konstruktor tako da prima 3 argumenta (ime, prezime, datumRođenja) kojima se inicijaliziraju članovi objekta.
         public Osoba(string ime,string prezime,DateTime datumRođenja)
