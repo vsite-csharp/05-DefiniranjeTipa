@@ -15,11 +15,14 @@ namespace Vsite.CSharp.DefiniranjeTipa
             Debug.WriteLine(poruka);
         }
 
-        // TODO:100 Dodati destruktor (tj. finalizirajuću metodu) i njemu napisati naredbe koje će u konzolu i u Output prozor ispisati: "Destruktor objekta br. {RedniBroj}."
-
 
         public readonly int RedniBroj; // redni broj objekta
 
         static int Brojač = 0; // brojač ukupno stvorenih objekata
+        ~KlasaSDestruktorom()
+        {
+            Console.WriteLine("Destruktor objekta br. {0}", RedniBroj);
+            Debug.WriteLine("Destruktor objekta br. {0}", RedniBroj);
+        }
     }
 }

@@ -13,7 +13,6 @@ namespace Vsite.CSharp.DefiniranjeTipa
             Console.WriteLine("SaStatičkimKonstruktorom1.StatičkiKonstruktor");
         }
 
-        // TODO:093 Pokrenuti program i pogledati ispis
 
         public static void Metoda1()
         {

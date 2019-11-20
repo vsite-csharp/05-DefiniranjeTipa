@@ -9,25 +9,27 @@ namespace Vsite.CSharp.DefiniranjeTipa
             Udaljenost d = new Udaljenost();
             Console.WriteLine(d.Broj);
             Console.WriteLine(d.Jedinica);
-            // TODO:070 Stvoriti objekt strukture Udaljenost i ispisati vrijednosti članova.
+
+           
 
 
-            // TODO:072 Stvoriti objekt pozivom praznog konstruktora te ispisati vrijednosti članova.
 
 
         }
 
         public static void PozivKonstruktoraSDvaArgumenta(double broj, JedinicaDuljine jedinica)
         {
-            // TODO:074 Stvoriti objekt pozivom konstruktora koji prima dva argumenta te ispisati vrijednosti članova.
-
+            Udaljenost dist = new Udaljenost(broj, jedinica);
+            Console.WriteLine(dist.Broj);
+            Console.WriteLine(dist.Jedinica);
 
         }
 
         public static void PozivKonstruktoraSJednimArgumentom(double broj)
         {
-            // TODO:076 Stvoriti objekt pozivom konstruktora s jednim argumentom te ispisati vrijednosti članova.
-
+            Udaljenost dist = new Udaljenost(broj);
+            Console.WriteLine(dist.Broj);
+            Console.WriteLine(dist.Jedinica);
         }
 
         static void Main(string[] args)
