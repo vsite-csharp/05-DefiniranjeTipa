@@ -10,10 +10,9 @@ namespace Vsite.CSharp.DefiniranjeTipa
 
         public Osoba(string ime, string prezime, DateTime datumrRodenja)
         {
-            Osoba o1 = new Osoba("","",DateTime.MinValue);
             Ime = ime;
             Prezime = prezime;
-            DatumRođenja = new DateTime(1851, 5, 3 );
+            DatumRođenja = datumrRodenja;
         }
     
     }
