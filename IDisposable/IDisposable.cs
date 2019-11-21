@@ -7,13 +7,15 @@ namespace Vsite.CSharp.DefiniranjeTipa
     {
         public static void StvaranjeIPisanjeUDatoteku(string imeDatoteke)
         {
-            StreamWriter sw = new StreamWriter(imeDatoteke);
-            sw.WriteLine("Ovo je moj upis");
-            // TODO:120 Pokrenuti program i pogledati ispis.
+            using (StreamWriter sw = new StreamWriter(imeDatoteke))
+            {
+                sw.WriteLine("Ovo je moj upis");
+            }
+                
 
-            // TODO:121 Dodati poziv metode StreamWriter.Dispose (ili StreamWriter.Close) te ponovno pokrenuti program.
 
-            // TODO:122 Preraditi kod metode tako da se umjesto metode Dispose koristi blok using
+            //sw.Close() ili despose();
+            
 
         }
 
