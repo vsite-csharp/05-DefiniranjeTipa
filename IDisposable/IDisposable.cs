@@ -32,10 +32,10 @@ namespace Vsite.CSharp.DefiniranjeTipa
 
             //osim eksplicitnog moguće je napraviti i ovako (dolje)
             //možda bolje rješenje 
-            using (StreamWriter ssw = new StreamWriter(imeDatoteke))
-            {
-                sw.WriteLine("Ovo je 2. moj upis");
-            }
+            //using (StreamWriter ssw = new StreamWriter(imeDatoteke))
+            //{
+            //    sw.WriteLine("Ovo je 2. moj upis");
+            //}
 
         }
 
