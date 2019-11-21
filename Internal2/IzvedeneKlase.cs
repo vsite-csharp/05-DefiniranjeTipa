@@ -20,7 +20,7 @@ namespace Vsite.CSharp.DefiniranjeTipa
         }
     }
 
-    class IzvedenaIzInterneBazne
+    public class IzvedenaIzInterneBazne
     {
 
         public void IspišiMe()
