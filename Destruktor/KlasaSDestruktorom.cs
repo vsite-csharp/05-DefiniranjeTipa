@@ -15,6 +15,12 @@ namespace Vsite.CSharp.DefiniranjeTipa
             Debug.WriteLine(poruka);
         }
 
+        ~KlasaSDestruktorom(){
+        Console.WriteLine("Destruktor objeta br. {0}",RedniBroj);
+        Debug.WriteLine("Destruktor objeta br. {0}",RedniBroj);
+        
+        }
+
         // TODO:100 Dodati destruktor (tj. finalizirajuću metodu) i njemu napisati naredbe koje će u konzolu i u Output prozor ispisati: "Destruktor objekta br. {RedniBroj}."
 
 
