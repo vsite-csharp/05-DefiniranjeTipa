@@ -5,7 +5,7 @@ namespace Vsite.CSharp.DefiniranjeTipa
 {
     class Program
     {
-        // TODO:110 Staviti točku prekida (breakpoint) u destruktor klase KlasaSDestruktorm, pokrenuti program i pogledati zadnje ispise prije prekida izvođenja.
+        
         static void Main(string[] args)
         {
             Console.WriteLine("Ušao sam u 'Main'");
