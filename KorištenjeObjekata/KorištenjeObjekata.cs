@@ -6,7 +6,7 @@ namespace Vsite.CSharp.DefiniranjeTipa
 {
     class KorištenjeObjekata
     {
-        // TODO:000 Ispisati trenutni datum i vrijeme pomoću statičkog svojstva DateTime.Now
+        // Ispisati trenutni datum i vrijeme pomoću statičkog svojstva DateTime.Now
         public static void IspišiTrenutniDatumVrijeme()
         {
             var sad = DateTime.Now;
