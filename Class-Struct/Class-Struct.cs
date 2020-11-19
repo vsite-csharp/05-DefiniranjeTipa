@@ -10,7 +10,7 @@ namespace Vsite.CSharp.DefiniranjeTipa
             this.tekst = tekst;
         }
         public string tekst;
-        public void ispišiČlan()
+        public void IspišiČlan()
         {
             Console.WriteLine(tekst);
         }
@@ -21,7 +21,7 @@ namespace Vsite.CSharp.DefiniranjeTipa
     class MojaKlasa
     {
         public int broj = 5;
-        public void ispišiČlan()
+        public void IspišiČlan()
         {
 
             Console.WriteLine(broj);
@@ -36,15 +36,15 @@ namespace Vsite.CSharp.DefiniranjeTipa
             MojaStruktura ms1 = new MojaStruktura("MojaStruktura");
             MojaStruktura ms2 = ms1;
             //  Pozvati metodu IspišiČlan za obje instance (ms1 i ms2).
-            ms1.ispišiČlan();
-            ms2.ispišiČlan();
+            ms1.IspišiČlan();
+            ms2.IspišiČlan();
 
             Console.WriteLine();
             //  Otkomentirati donju naredbu.
-            ms2.tekst = "mystruct";
+            ms2.tekst = "Mystruct";
             //  Ponovno pozvati metodu IspišiČlan za obje instance te obrazložiti rezultat.
-            ms1.ispišiČlan();
-            ms2.ispišiČlan();//-mijenja se vrijednost
+            ms1.IspišiČlan();
+            ms2.IspišiČlan();//-mijenja se vrijednost
 
         }
 
@@ -53,14 +53,14 @@ namespace Vsite.CSharp.DefiniranjeTipa
             MojaKlasa mk1 = new MojaKlasa();
             MojaKlasa mk2 = mk1;
             //  Napisati naredbe koje pozivaju metodu IspišiČlan za obje instance.
-            mk1.ispišiČlan();
-            mk2.ispišiČlan();
+            mk1.IspišiČlan();
+            mk2.IspišiČlan();
             Console.WriteLine();
             //  Otkomentirati donju naredbu.
             mk2.broj = 2;
             //  Ponovno pozvati metodu IspišiČlan za obje instance te obrazložiti rezultat.
-            mk1.ispišiČlan();
-            mk2.ispišiČlan();//ispis 2 2
+            mk1.IspišiČlan();
+            mk2.IspišiČlan();//ispis 2 2
 
         }
 
