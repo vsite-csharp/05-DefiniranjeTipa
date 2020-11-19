@@ -37,7 +37,7 @@ namespace Vsite.CSharp.DefiniranjeTipa
 
         }
 
-        // TODO:077 Pokrenuti testove i provjeriti prolaze li sva 3 testa u grupi TestKonstruktoraStrukture
+        // Pokrenuti testove i provjeriti prolaze li sva 3 testa u grupi TestKonstruktoraStrukture
 
         static void Main(string[] args)
         {
