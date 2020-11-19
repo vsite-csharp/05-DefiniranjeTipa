@@ -2,7 +2,7 @@
 
 namespace Vsite.CSharp.DefiniranjeTipa
 {
-    // Prekopirati kod strukture iz prethodnog primjera i promijeniti pravo pristupa članu "tekst" u public.
+    //  Prekopirati kod strukture iz prethodnog primjera i promijeniti pravo pristupa članu "tekst" u public.
     struct MojaStruktura
     {
         public MojaStruktura(string tekst)
@@ -31,7 +31,7 @@ namespace Vsite.CSharp.DefiniranjeTipa
     {
         public static void IspišiStrukture()
         {
-            // Promijeniti poziv konstruktora tako da ispis bude "MojaStruktura".
+            //  Promijeniti poziv konstruktora tako da ispis bude "MojaStruktura".
             MojaStruktura ms1 = new MojaStruktura("MojaStruktura");
             MojaStruktura ms2 = ms1;
             // Pozvati metodu IspišiČlan za obje instance (ms1 i ms2).
@@ -39,13 +39,12 @@ namespace Vsite.CSharp.DefiniranjeTipa
             ms2.IspišiČlan();
 
             Console.WriteLine();
-            // Otkomentirati donju naredbu.
+            //  Otkomentirati donju naredbu.
             ms2.tekst = "MyStruct";
             // Ponovno pozvati metodu IspišiČlan za obje instance te obrazložiti rezultat.
             ms1.IspišiČlan();
             ms2.IspišiČlan();
         }
-
 
         public static void IspišiKlase()
         {
