@@ -11,7 +11,6 @@ namespace Vsite.CSharp.DefiniranjeTipa
             Console.WriteLine(o.Ime);
             Console.WriteLine(o.Prezime);
             Console.WriteLine(o.DatumRođenja);
-
         }
 
         public static void StvoriObjektZadanimKonstruktorom(string ime, string prezime, DateTime datumRođenja)
@@ -21,10 +20,9 @@ namespace Vsite.CSharp.DefiniranjeTipa
             Console.WriteLine(o.Ime);
             Console.WriteLine(o.Prezime);
             Console.WriteLine(o.DatumRođenja);
-
         }
 
-        // TODO:064 Pokrenuti testove i provjeriti prolazi li test u grupi TestKonstruktoraKlase
+        //  Pokrenuti testove i provjeriti prolazi li test u grupi TestKonstruktoraKlase
 
         static void Main(string[] args)
         {
