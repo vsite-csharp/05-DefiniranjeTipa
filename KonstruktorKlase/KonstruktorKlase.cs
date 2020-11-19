@@ -6,7 +6,11 @@ namespace Vsite.CSharp.DefiniranjeTipa
     {
         public static void StvoriObjektPodrazumijevanimKonstruktorom()
         {
-            // TODO:060 Stvoriti objekt klase Osoba i ispisati vrijednosti članova Ime, Prezime, DatumRođenja
+            //  Stvoriti objekt klase Osoba i ispisati vrijednosti članova Ime, Prezime, DatumRođenja
+            Osoba o = new Osoba();
+            Console.WriteLine(o.Ime);
+            Console.WriteLine(o.Prezime);
+            Console.WriteLine(o.DatumRođenja);
 
         }
 
