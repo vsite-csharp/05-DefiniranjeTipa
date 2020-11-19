@@ -17,7 +17,7 @@ namespace Vsite.CSharp.DefiniranjeTipa
 
     }
 
-    // TODO:025 Prekopirati kod klase iz prethodnog primjera i promijeniti pravo pristupa članu "broj" u public.
+    // Prekopirati kod klase iz prethodnog primjera i promijeniti pravo pristupa članu "broj" u public.
     class MojaKlasa
     {
         public int broj = 5;
@@ -60,7 +60,7 @@ namespace Vsite.CSharp.DefiniranjeTipa
             mk2.IspišiČlan();
         }
 
-        // TODO:029 Pokrenuti testove i provjeriti prolaze li oba testa u grupi TestClass_Struct.
+        // Pokrenuti testove i provjeriti prolaze li oba testa u grupi TestClass_Struct.
 
         static void Main(string[] args)
         {
