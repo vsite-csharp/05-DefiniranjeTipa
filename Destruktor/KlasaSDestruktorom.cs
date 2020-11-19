@@ -11,7 +11,7 @@ namespace Vsite.CSharp.DefiniranjeTipa
             string poruka = string.Format("Konstruktor objekta br. {0}", RedniBroj);
             // ispis u konzolu
             Console.WriteLine(poruka);
-            // dijagnostički ispis u Output prozor Visual Studija
+            // dijagnostički ispis u Output prozor Studija
             Debug.WriteLine(poruka);
         }
 
