@@ -22,6 +22,10 @@ namespace Vsite.CSharp.DefiniranjeTipa
 
     public class IzvedenaIzInterneBazne
     {
-
+        public void IspišiMe()
+        {
+            var ib = new InternaBazna();
+            ib.IspišiMe();
+        }
     }
 }
