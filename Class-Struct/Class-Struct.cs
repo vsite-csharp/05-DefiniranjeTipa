@@ -49,13 +49,13 @@ namespace Vsite.CSharp.DefiniranjeTipa
         {
             MojaKlasa mk1 = new MojaKlasa();
             MojaKlasa mk2 = mk1;
-            // TODO:026 Napisati naredbe koje pozivaju metodu IspišiČlan za obje instance.
+            // Napisati naredbe koje pozivaju metodu IspišiČlan za obje instance.
             mk1.IspišiČlan();
             mk2.IspišiČlan();
             Console.WriteLine();
-            // TODO:027 Otkomentirati donju naredbu.
+            // Otkomentirati donju naredbu.
             mk2.broj = 2;
-            // TODO:028 Ponovno pozvati metodu IspišiČlan za obje instance te obrazložiti rezultat.
+            // Ponovno pozvati metodu IspišiČlan za obje instance te obrazložiti rezultat.
             mk1.IspišiČlan();
             mk2.IspišiČlan();
         }
