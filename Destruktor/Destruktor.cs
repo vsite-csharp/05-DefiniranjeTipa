@@ -12,7 +12,7 @@ namespace Vsite.CSharp.DefiniranjeTipa
             }
 
             // Dodati for petlju koja će se ponoviti 100000 puta i unutar koje će se kreirati novi objekti tipa KlasaSDestruktorom. Pokrenuti program i provjeriti redni broj prvog uništenog objekta.
-            for(int i = 0;i< 10000; ++i)
+            for(int i = 0;i< 100000; ++i)
             {
                 KlasaSDestruktorom ksd = new KlasaSDestruktorom();
             }

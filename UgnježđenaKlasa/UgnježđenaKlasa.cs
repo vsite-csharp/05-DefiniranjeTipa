@@ -11,7 +11,6 @@ namespace Vsite.CSharp.DefiniranjeTipa
 
             IzvedenoGnijezdo ig = new IzvedenoGnijezdo();
             ig.PredstaviSe();
-            IzravnoKorištenjeUgnježđeneKlase();
 
             Console.WriteLine("GOTOVO!!!");
             Console.ReadKey();
