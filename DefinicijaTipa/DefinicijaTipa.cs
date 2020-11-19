@@ -42,13 +42,13 @@ namespace Vsite.CSharp.DefiniranjeTipa
 
         public static void IspišiČlanStrukture()
         {
-            // TODO:015 Inicijalizirati objekt tipa MojaStruktura i pozvati njegovu metodu IspišiČlan koja treba ispisati "MojaStruktura".
+            // 015 Inicijalizirati objekt tipa MojaStruktura i pozvati njegovu metodu IspišiČlan koja treba ispisati "MojaStruktura".
             MojaStruktura ms = new MojaStruktura("MojaStruktura"); // šaljem string u konstruktor
             ms.IspišiČlan();    // neće ispisati ništa ukoliko je u konstruktoru prazan parametar -> nema inicijalizacije 
                                 // - po defaultu je null -> moramo definirati kontruktor
         }
 
-        // TODO:016 Pokrenuti testove i provjeriti prolaze li oba testa u grupi TestDefinicijeTipa.
+        // 016 Pokrenuti testove i provjeriti prolaze li oba testa u grupi TestDefinicijeTipa.
 
         static void Main(string[] args)
         {
