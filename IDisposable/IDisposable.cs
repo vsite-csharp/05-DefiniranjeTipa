@@ -9,13 +9,17 @@ namespace Vsite.CSharp.DefiniranjeTipa
         {
             StreamWriter sw = new StreamWriter(imeDatoteke);
             sw.WriteLine("Ovo je moj upis");
-            // TODO:120 Pokrenuti program i pogledati ispis.
+            // Pokrenuti program i pogledati ispis.
 
-            // TODO:121 Dodati poziv metode StreamWriter.Dispose (ili StreamWriter.Close) te ponovno pokrenuti program.
+            // Dodati poziv metode StreamWriter.Dispose (ili StreamWriter.Close) te ponovno pokrenuti program.
+            sw.Dispose();       //ili Close();
 
-            // TODO:122 Preraditi kod metode tako da se umjesto metode Dispose koristi blok using
-
-        }
+            // Preraditi kod metode tako da se umjesto metode Dispose koristi blok using
+            using (StreamWriter sw2 = new StreamWriter(imeDatoteke)) 
+            { 
+                sw2.WriteLine("Ovo je moj upis");
+            }       
+            }
 
         public static void BrisanjeDatoteke(string imeDatoteke)
         {
