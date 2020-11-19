@@ -19,7 +19,7 @@ namespace Vsite.CSharp.DefiniranjeTipa.Testovi
         {
             IzvedenoGnijezdo ig = new IzvedenoGnijezdo();
             ig.PredstaviSe();
-            Assert.AreEqual("Ja sam klasa Ugnježđena", cw.GetString());
+            Assert.AreEqual("Ja sam klasa Ugnježđena, neposredno", cw.GetString());
         }
 
         [TestMethod]
