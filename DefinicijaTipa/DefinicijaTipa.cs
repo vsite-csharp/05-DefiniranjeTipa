@@ -46,7 +46,7 @@ namespace Vsite.CSharp.DefiniranjeTipa
             ms.IspišiČlan();
         }
 
-        // TODO:016 Pokrenuti testove i provjeriti prolaze li oba testa u grupi TestDefinicijeTipa.
+        // Pokrenuti testove i provjeriti prolaze li oba testa u grupi TestDefinicijeTipa.
 
         static void Main(string[] args)
         {
