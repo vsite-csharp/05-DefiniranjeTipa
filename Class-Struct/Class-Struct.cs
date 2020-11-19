@@ -41,7 +41,7 @@ namespace Vsite.CSharp.DefiniranjeTipa
 
             Console.WriteLine();
             //  Otkomentirati donju naredbu.
-            ms2.tekst = "Mystruct";
+            ms2.tekst = "MyStruct";
             //  Ponovno pozvati metodu IspišiČlan za obje instance te obrazložiti rezultat.
             ms1.IspišiČlan();
             ms2.IspišiČlan();//-mijenja se vrijednost
