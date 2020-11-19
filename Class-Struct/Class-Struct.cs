@@ -6,13 +6,24 @@ namespace Vsite.CSharp.DefiniranjeTipa
     struct MojaStruktura
     {
 
-
+        //this.tekst = tekst;
+            public string tekst;
+        // javnu metodu IspišiČlan tipa void i u njoj dodati naredbu koja će ispisati podatkovni član "broj".
+        public void IspišiČlan()
+        {
+            Console.WriteLine(tekst);
+        }
     }
 
     // TODO:025 Prekopirati kod klase iz prethodnog primjera i promijeniti pravo pristupa članu "broj" u public.
     class MojaKlasa
     {
-
+        public int broj = 5;
+        // Zadati javnu metodu IspišiČlan tipa void i u njoj dodati naredbu koja će ispisati podatkovni član "broj".
+        public void IspišiČlan()
+        {
+            Console.WriteLine(broj);
+        }
     }
 
     class ClassStruct
@@ -20,13 +31,15 @@ namespace Vsite.CSharp.DefiniranjeTipa
         public static void IspišiStrukture()
         {
             // TODO:021 Promijeniti poziv konstruktora tako da ispis bude "MojaStruktura".
-            MojaStruktura ms1 = new MojaStruktura();
+            MojaStruktura ms1 = new MojaStruktura(/*"MojaStruktura"*/);
             MojaStruktura ms2 = ms1;
             // TODO:022 Pozvati metodu IspišiČlan za obje instance (ms1 i ms2).
+            ms1.IspišiČlan();
+            ms2.IspišiČlan();
 
             Console.WriteLine();
             // TODO:023 Otkomentirati donju naredbu.
-            //ms2.tekst = "MyStruct";
+            ms2.tekst = "MyStruct";
             // TODO:024 Ponovno pozvati metodu IspišiČlan za obje instance te obrazložiti rezultat.
 
         }
@@ -39,7 +52,7 @@ namespace Vsite.CSharp.DefiniranjeTipa
 
             Console.WriteLine();
             // TODO:027 Otkomentirati donju naredbu.
-            //mk2.broj = 2;
+            mk2.broj = 2;
             // TODO:028 Ponovno pozvati metodu IspišiČlan za obje instance te obrazložiti rezultat.
 
         }
