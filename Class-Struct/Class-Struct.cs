@@ -20,12 +20,11 @@ namespace Vsite.CSharp.DefiniranjeTipa
     class MojaKlasa
     {
         public int broj = 5;
-    
-    public void ispišiČlan()
-    {
-        Console.WriteLine(broj);
+        public void IspišiČlan()
+        {
+            Console.WriteLine(broj);
+        }
     }
-}
 
 class ClassStruct
     {
