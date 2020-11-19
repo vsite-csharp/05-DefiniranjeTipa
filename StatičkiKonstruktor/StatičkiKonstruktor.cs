@@ -15,7 +15,7 @@ namespace Vsite.CSharp.DefiniranjeTipa
             sk.Metoda2();
         }
 
-        // TODO:090 Pokrenuti program, pogledati ispis i obrazložiti ga.
+        //za poziv statitcke metode ne moramo instancirati objekt
 
         static void Main(string[] args)
         {
