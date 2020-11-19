@@ -32,7 +32,7 @@ namespace Vsite.CSharp.DefiniranjeTipa
 
     class IzvedenoGnijezdo : Gnijezdo
     {
-        // TODO:041 Napisati implementaciju metode PredstaviSe koja će pozvati najdostupniju metodu iz klase Ugnježđena
+        // 041 Napisati implementaciju metode PredstaviSe koja će pozvati najdostupniju metodu iz klase Ugnježđena
         // (po potrebi promijeniti pravo pristupa za klasu Ugnježđena)
         public void PredstaviSe()
         {

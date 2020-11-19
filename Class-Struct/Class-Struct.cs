@@ -19,7 +19,7 @@ namespace Vsite.CSharp.DefiniranjeTipa
         }
     }
 
-    // TODO:025 Prekopirati kod klase iz prethodnog primjera i promijeniti pravo pristupa članu "broj" u public.
+    // 025 Prekopirati kod klase iz prethodnog primjera i promijeniti pravo pristupa članu "broj" u public.
     class MojaKlasa
     {
         public int broj = 5;
@@ -57,7 +57,7 @@ namespace Vsite.CSharp.DefiniranjeTipa
             mk1.IspišiČlan();
             mk2.IspišiČlan();
             Console.WriteLine();
-            // TODO:027 Otkomentirati donju naredbu.
+            // 027 Otkomentirati donju naredbu.
             mk2.broj = 2;
             // 028 Ponovno pozvati metodu IspišiČlan za obje instance te obrazložiti rezultat.
             mk1.IspišiČlan();
