@@ -36,7 +36,7 @@ namespace Vsite.CSharp.DefiniranjeTipa
     {
         public static void IspišiČlanKlase()
         {
-            // TODO:012 Inicijalizirati objekt tipa MojaKlasa i pozvati njegovu metodu IspišiČlan
+            // Inicijalizirati objekt tipa MojaKlasa i pozvati njegovu metodu IspišiČlan
             MojaKlasa mk = new MojaKlasa();
             mk.IspišiČlan();
         }
