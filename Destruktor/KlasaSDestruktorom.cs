@@ -20,14 +20,15 @@ namespace Vsite.CSharp.DefiniranjeTipa
         ~KlasaSDestruktorom()
         {
             // ispis u konzolu
+            
+            // "Konstruktor objekta br. 1000"
+            // "***Pozivamo GC.Collect() ***"
+
             Console.WriteLine($"Destruktor objekta br. {RedniBroj}.");
+            
             // dijagnostički ispis u Output prozor Visual Studija
             Debug.WriteLine($"Destruktor objekta br. {RedniBroj}.");
         }
-       
-
-      
-
 
         public readonly int RedniBroj; // redni broj objekta
 
