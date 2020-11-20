@@ -21,12 +21,12 @@ namespace Vsite.CSharp.StatičkiČlanovi
             instanca = ++brojač;
         }
 
-        // TODO:054 U metodu dodati naredbu koja će ispisati vrijednost člana "instanca"
+        // U metodu dodati naredbu koja će ispisati vrijednost člana "instanca"
         public void IspišiRedniBrojObjekta()
         {
             Console.WriteLine(instanca);
         }
 
-        // TODO:055 Pokrenuti testove i provjeriti prolaze li oba testa u grupi TestStatičkihČlanova
+        // Pokrenuti testove i provjeriti prolaze li oba testa u grupi TestStatičkihČlanova
     }
 }

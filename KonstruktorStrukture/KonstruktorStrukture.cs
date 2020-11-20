@@ -28,13 +28,13 @@ namespace Vsite.CSharp.DefiniranjeTipa
 
         public static void PozivKonstruktoraSJednimArgumentom(double broj)
         {
-            // TODO:076 Stvoriti objekt pozivom konstruktora s jednim argumentom te ispisati vrijednosti članova.
+            // Stvoriti objekt pozivom konstruktora s jednim argumentom te ispisati vrijednosti članova.
             var d = new Udaljenost(broj);
             Console.WriteLine(d.Broj);
             Console.WriteLine(d.Jedinica);
         }
 
-        // TODO:077 Pokrenuti testove i provjeriti prolaze li sva 3 testa u grupi TestKonstruktoraStrukture
+        // Pokrenuti testove i provjeriti prolaze li sva 3 testa u grupi TestKonstruktoraStrukture
 
         static void Main(string[] args)
         {

@@ -13,7 +13,7 @@ namespace Vsite.CSharp.DefiniranjeTipa
 
             // Dodati poziv metode StreamWriter.Dispose (ili StreamWriter.Close) te ponovno pokrenuti program.
             sw.Dispose();//ili sw.Close();
-            // TODO:122 Preraditi kod metode tako da se umjesto metode Dispose koristi blok using
+            // Preraditi kod metode tako da se umjesto metode Dispose koristi blok using
             using (StreamWriter sw2 = new StreamWriter(imeDatoteke))
             {
                 sw2.WriteLine("ovo je moj novi upis");

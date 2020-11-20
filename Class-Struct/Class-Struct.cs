@@ -16,7 +16,7 @@ namespace Vsite.CSharp.DefiniranjeTipa
         }
     }
 
-    // TODO:025 Prekopirati kod klase iz prethodnog primjera i promijeniti pravo pristupa članu "broj" u public.
+    // Prekopirati kod klase iz prethodnog primjera i promijeniti pravo pristupa članu "broj" u public.
     class MojaKlasa
     {
         public int broj = 5;
@@ -48,18 +48,18 @@ class ClassStruct
         {
             MojaKlasa mk1 = new MojaKlasa();
             MojaKlasa mk2 = mk1;
-            // TODO:026 Napisati naredbe koje pozivaju metodu IspišiČlan za obje instance.
+            // Napisati naredbe koje pozivaju metodu IspišiČlan za obje instance.
             mk1.IspišiČlan();
             mk2.IspišiČlan();
             Console.WriteLine();
-            // TODO:027 Otkomentirati donju naredbu.
+            // Otkomentirati donju naredbu.
             mk2.broj = 2;
-            // TODO:028 Ponovno pozvati metodu IspišiČlan za obje instance te obrazložiti rezultat.
+            // Ponovno pozvati metodu IspišiČlan za obje instance te obrazložiti rezultat.
             mk1.IspišiČlan();
             mk2.IspišiČlan();
         }
 
-        // TODO:029 Pokrenuti testove i provjeriti prolaze li oba testa u grupi TestClass_Struct.
+        // Pokrenuti testove i provjeriti prolaze li oba testa u grupi TestClass_Struct.
 
         static void Main(string[] args)
         {
