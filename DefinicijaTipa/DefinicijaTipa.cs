@@ -23,7 +23,12 @@ namespace Vsite.CSharp.DefiniranjeTipa
 
         //  Zadati javnu metodu IspišiČlan tipa void i u njoj dodati naredbu koja će ispisati podatkovni član "tekst".
 
-        private const string tekst = "MojaStruktura";
+        private string tekst;
+
+        public MojaStruktura(string tekst)
+        {
+            this.tekst = tekst;
+        }
 
         public void IspišiČlan()
         {
@@ -45,7 +50,7 @@ namespace Vsite.CSharp.DefiniranjeTipa
         public static void IspišiČlanStrukture()
         {
             // Inicijalizirati objekt tipa MojaStruktura i pozvati njegovu metodu IspišiČlan koja treba ispisati "MojaStruktura".
-            var mojaStruktura = new MojaStruktura();
+            var mojaStruktura = new MojaStruktura("MojaStruktura");
             mojaStruktura.IspišiČlan();
         }
 
