@@ -21,7 +21,7 @@ namespace Vsite.CSharp.DefiniranjeTipa
         // :002 Ispisati trenutno vrijeme pomoću statičkog svojstva DateTime.Now i metode DateTime.ToShortTimeString
         public static void IspišiTrenutnoVrijeme()
         {
-            Console.WriteLine(DateTime.Now.ToLongTimeString());
+            Console.WriteLine(DateTime.Now.ToShortTimeString());
         }
 
         public static int IzračunajBrojDanaIzmeđuDvaDatuma(int godina1, int mjesec1, int dan1, int godina2, int mjesec2, int dan2)

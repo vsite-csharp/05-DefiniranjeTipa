@@ -42,7 +42,7 @@ namespace Vsite.CSharp.DefiniranjeTipa
         public static void IspišiČlanStrukture()
         {
             // TODO:015 Inicijalizirati objekt tipa MojaStruktura i pozvati njegovu metodu IspišiČlan koja treba ispisati "MojaStruktura".
-            var ms = new MojaStruktura("MojaStrktura");
+            var ms = new MojaStruktura("MojaStruktura");
             ms.IspišiČlan();
         }
 
