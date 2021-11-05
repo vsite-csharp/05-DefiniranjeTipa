@@ -2,17 +2,29 @@
 
 namespace Vsite.CSharp.DefiniranjeTipa
 {
-    // TODO:020 Prekopirati kod strukture iz prethodnog primjera i promijeniti pravo pristupa članu "tekst" u public.
+    // Prekopirati kod strukture iz prethodnog primjera i promijeniti pravo pristupa članu "tekst" u public.
     struct MojaStruktura
     {
-
-
+        public string tekst;
+        public MojaStruktura(string tekst)
+        {
+            this.tekst = tekst;
+        }
+        public void IspišiČlan()
+        {
+            Console.WriteLine(tekst);
+        }
     }
 
-    // TODO:025 Prekopirati kod klase iz prethodnog primjera i promijeniti pravo pristupa članu "broj" u public.
+    // Prekopirati kod klase iz prethodnog primjera i promijeniti pravo pristupa članu "broj" u public.
     class MojaKlasa
     {
+        public int broj = 5;
 
+        public void IspišiČlan()
+        {
+            Console.WriteLine(broj);
+        }
     }
 
     class ClassStruct
@@ -20,15 +32,16 @@ namespace Vsite.CSharp.DefiniranjeTipa
         public static void IspišiStrukture()
         {
             // TODO:021 Promijeniti poziv konstruktora tako da ispis bude "MojaStruktura".
-            MojaStruktura ms1 = new MojaStruktura();
+            MojaStruktura ms1 = new MojaStruktura("MojaStruktura");
             MojaStruktura ms2 = ms1;
             // TODO:022 Pozvati metodu IspišiČlan za obje instance (ms1 i ms2).
-
-            Console.WriteLine();
+            ms1.IspišiČlan();
+            ms2.IspišiČlan();
             // TODO:023 Otkomentirati donju naredbu.
-            //ms2.tekst = "MyStruct";
+            ms2.tekst = "MyStruct";
             // TODO:024 Ponovno pozvati metodu IspišiČlan za obje instance te obrazložiti rezultat.
-
+            ms1.IspišiČlan();
+            ms2.IspišiČlan();
         }
 
         public static void IspišiKlase()
@@ -39,9 +52,15 @@ namespace Vsite.CSharp.DefiniranjeTipa
 
             Console.WriteLine();
             // TODO:027 Otkomentirati donju naredbu.
-            //mk2.broj = 2;
             // TODO:028 Ponovno pozvati metodu IspišiČlan za obje instance te obrazložiti rezultat.
-
+            mk1.IspišiČlan();
+            mk2.IspišiČlan();
+            Console.WriteLine();
+            // Otkomentirati donju naredbu.
+            mk2.broj = 2;
+            // Ponovno pozvati metodu IspišiČlan za obje instance te obrazložiti rezultat.
+            mk1.IspišiČlan();
+            mk2.IspišiČlan();
         }
 
         // TODO:029 Pokrenuti testove i provjeriti prolaze li oba testa u grupi TestClass_Struct.
