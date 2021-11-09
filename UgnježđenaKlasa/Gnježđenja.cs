@@ -4,7 +4,7 @@ namespace Vsite.CSharp.DefiniranjeTipa
 {
     class Gnijezdo
     {
-        class Ugnježđena
+        public class Ugnježđena
         {
             public void IspišiMe()
             {
@@ -25,7 +25,8 @@ namespace Vsite.CSharp.DefiniranjeTipa
         // TODO:040 Napisati implementaciju metode IspišiMe koja će pozvati metodu IspišiMe iz klase Ugnježđena
         public void IspišiMe()
         {
-
+            Gnijezdo.Ugnježđena gu = new Gnijezdo.Ugnježđena();
+            gu.IspišiMe();
         }
     }
 
@@ -35,6 +36,7 @@ namespace Vsite.CSharp.DefiniranjeTipa
         // (po potrebi promijeniti pravo pristupa za klasu Ugnježđena)
         public void PredstaviSe()
         {
+            Gnijezdo.Ugnježđena gu = new Gnijezdo.Ugnježđena();
             
         }
     }
