@@ -17,9 +17,9 @@ namespace Vsite.CSharp.DefiniranjeTipa
 
     struct MojaStruktura
     {
-        public MojaStruktura(string tekst);
+        public MojaStruktura(string tekst)
         {
-        this.telst = tekst;
+        this.tekst = tekst;
         }
 
     // TODO:013 Dodati privatno polje (podatkovni član) "tekst" tipa string i dodijeliti mu vrijednost "MojaStruktura"

@@ -5,13 +5,14 @@ namespace Vsite.CSharp.DefiniranjeTipa
     // TODO:020 Prekopirati kod strukture iz prethodnog primjera i promijeniti pravo pristupa članu "tekst" u public.
     struct MojaStruktura
     {
-        public MojaStruktura(string tekst);
+        public MojaStruktura(string tekst)
         {
-        this.telst = tekst;
+            this.tekst = tekst;
         }
 
-    // TODO:013 Dodati privatno polje (podatkovni član) "tekst" tipa string i dodijeliti mu vrijednost "MojaStruktura"
-    private string tekst; //"MojaStruktura"
+
+// TODO:013 Dodati privatno polje (podatkovni član) "tekst" tipa string i dodijeliti mu vrijednost "MojaStruktura"
+private string tekst; //"MojaStruktura"
     // TODO:014 Zadati javnu metodu IspišiČlan tipa void i u njoj dodati naredbu koja će ispisati podatkovni član "tekst".
     public void IspišiČlan()
     {
@@ -21,9 +22,9 @@ namespace Vsite.CSharp.DefiniranjeTipa
 // TODO:025 Prekopirati kod klase iz prethodnog primjera i promijeniti pravo pristupa članu "broj" u public.
     class MojaKlasa
         {
-            private int broj = 5;
+            public int broj = 5;
 
-            public void IspišiČlan();
+            public void IspišiČlan()
             {
                 Console.WriteLine(broj);
             }
@@ -79,4 +80,6 @@ namespace Vsite.CSharp.DefiniranjeTipa
             Console.ReadKey();
         }
     }
+    }
 }
+
