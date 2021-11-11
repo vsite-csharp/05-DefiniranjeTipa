@@ -17,6 +17,8 @@ namespace Vsite.CSharp.StatičkiČlanovi
             mk2.IspišiRedniBrojObjekta();
 
             BrojačInstanci.IspišiBrojStvorenihObjekata();
+            mk2.IspišiRedniBrojObjekta();
+            mk1.IspišiRedniBrojObjekta();
 
             Console.WriteLine("GOTOVO!!!");
             Console.ReadKey();
