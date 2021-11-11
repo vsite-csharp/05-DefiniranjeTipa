@@ -38,7 +38,7 @@ namespace Vsite.CSharp.DefiniranjeTipa
             // :021 Promijeniti poziv konstruktora tako da ispis bude "MojaStruktura".
             MojaStruktura ms1 = new MojaStruktura("MojaStruktura");
             MojaStruktura ms2 = ms1;
-            // TODO:022 Pozvati metodu IspišiČlan za obje instance (ms1 i ms2).
+            // :022 Pozvati metodu IspišiČlan za obje instance (ms1 i ms2).
             ms1.IspišiČlan();
             ms2.IspišiČlan();
 
