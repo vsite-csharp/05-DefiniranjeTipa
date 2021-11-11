@@ -50,7 +50,7 @@ namespace Vsite.CSharp.DefiniranjeTipa
             // TODO:125 Dodati poziv metode RadSDatotekom.Dispose.
             //rd.Dispose();
             // TODO:127 Preraditi kod metode tako da se umjesto metode Dispose koristi blok using.
-            using (RadSdatotekom rd = new RadSdatotekom(imeDatoteke));
+            using (RadSdatotekom rd = new RadSdatotekom(imeDatoteke))
             {
                 rd.Zapiši("Ovo je moj upis");
             }
