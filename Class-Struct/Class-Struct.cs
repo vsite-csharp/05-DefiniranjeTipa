@@ -20,7 +20,7 @@ namespace Vsite.CSharp.DefiniranjeTipa
     // :025 Prekopirati kod klase iz prethodnog primjera i promijeniti pravo pristupa članu "broj" u public.
     class MojaKlasa
     {
-        private int broj = 5;
+        public int broj = 5;
         
         public void IspišiČlan()
         {
