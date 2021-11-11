@@ -6,17 +6,24 @@ namespace Vsite.CSharp.DefiniranjeTipa
     {
         public static void StvoriObjektPodrazumijevanimKonstruktorom()
         {
-            // TODO:060 Stvoriti objekt klase Osoba i ispisati vrijednosti članova Ime, Prezime, DatumRođenja
+            // 060 Stvoriti objekt klase Osoba i ispisati vrijednosti članova Ime, Prezime, DatumRođenja
+            var osoba = new Osoba();
+            Console.WriteLine(osoba.Ime);
+            Console.WriteLine(osoba.Prezime);
+            Console.WriteLine(osoba.DatumRođenja);
 
         }
 
         public static void StvoriObjektZadanimKonstruktorom(string ime, string prezime, DateTime datumRođenja)
         {
-            // TODO:063 Stvoriti objekt klase Osoba pozivom tog konstruktora i ispisati vrijednosti članova Ime, Prezime, DatumRođenja
-
+            // 063 Stvoriti objekt klase Osoba pozivom tog konstruktora i ispisati vrijednosti članova Ime, Prezime, DatumRođenja
+            var osoba1 = new Osoba(ime, prezime, datumRođenja);
+            Console.WriteLine(osoba1.Ime);
+            Console.WriteLine(osoba1.Prezime);
+            Console.WriteLine(osoba1.DatumRođenja);
         }
 
-        // TODO:064 Pokrenuti testove i provjeriti prolazi li test u grupi TestKonstruktoraKlase
+        // 064 Pokrenuti testove i provjeriti prolazi li test u grupi TestKonstruktoraKlase
 
         static void Main(string[] args)
         {
