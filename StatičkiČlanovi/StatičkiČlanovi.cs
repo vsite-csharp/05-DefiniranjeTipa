@@ -15,6 +15,7 @@ namespace Vsite.CSharp.StatičkiČlanovi
 
             BrojačInstanci mk2 = new BrojačInstanci();
             mk2.IspišiRedniBrojObjekta();
+            mk1.IspišiRedniBrojObjekta();
 
             BrojačInstanci.IspišiBrojStvorenihObjekata();
 
