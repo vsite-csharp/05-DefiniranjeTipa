@@ -42,7 +42,7 @@ namespace Vsite.CSharp.DefiniranjeTipa
             File.Delete(imeDatoteke);
         }
 
-        // TODO:120 Pokrenuti program i pogledati ispis. Provjeriti sadržaj datoteke "moj.txt".
+        // :120 Pokrenuti program i pogledati ispis. Provjeriti sadržaj datoteke "moj.txt".
         static void Main(string[] args)
         {
             try
