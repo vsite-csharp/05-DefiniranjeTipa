@@ -9,7 +9,7 @@ namespace Vsite.CSharp.DefiniranjeTipa
         // :011 Zadati javnu metodu IspišiČlan tipa void i u njoj dodati naredbu koja će ispisati podatkovni član "broj".
         public void IspišiČlan()
         {
-            Console.WriteLine(broj);
+            Console.WriteLine(broj); 
         }
     }
 
