@@ -6,7 +6,7 @@ namespace Vsite.CSharp.DefiniranjeTipa
     // TODO:122 Deklarirati da klasa implementira IDisposable sučelje te dodati javnu metodu Dispose.
     // TODO:123 Dodati u klasu metodu protected virtual void Dispose(bool disposing) i u nju prebaciti poziv StreamWriter.Close iz destruktora.
     // TODO:124 Napraviti pozive metode iz destruktora i iz javne metode Dispose.
-    class RadSdatotekom
+    class RadSdatotekom : IDisposable
     {
         private StreamWriter sw;
 
@@ -20,20 +20,46 @@ namespace Vsite.CSharp.DefiniranjeTipa
             sw.Write(tekst);
         }
 
-        // TODO:121 Dodati klasi destruktor koji će pozvati metodu StreamWriter.Close (odn. StreamWriter.Dispose). Pokrenuti program i provjeriti ispis.
+        public void Dispose()
+        {
+            //throw new NotImplementedException();
+            Dispose(true);
+        }
+
+        private bool disposed = false;
+
+        protected virtual void Dispose(bool disposing)
+        {
+            if  (!disposed)
+            {
+                sw.Close();
+                disposed = true;
+            }
+        }
+
+        // :121 Dodati klasi destruktor koji će pozvati metodu StreamWriter.Close (odn. StreamWriter.Dispose). Pokrenuti program i provjeriti ispis.
+        ~RadSdatotekom()
+        {
+            //sw.Close();
+            Dispose(true);
+        }
     }
 
     class Disposable
     {
         public static void StvaranjeIPisanjeUDatoteku(string imeDatoteke)
         {
-            RadSdatotekom rd = new RadSdatotekom(imeDatoteke);
-            rd.Zapiši("Ovo je moj upis");
+            //RadSdatotekom rd = new RadSdatotekom(imeDatoteke);
+            //rd.Zapiši("Ovo je moj upis");
 
-            // TODO:125 Dodati poziv metode RadSDatotekom.Dispose.
+            // :125 Dodati poziv metode RadSDatotekom.Dispose.
+            //rd.Dispose();
 
-            // TODO:127 Preraditi kod metode tako da se umjesto metode Dispose koristi blok using.
-
+            // :127 Preraditi kod metode tako da se umjesto metode Dispose koristi blok using.
+            using (RadSdatotekom rd = new RadSdatotekom(imeDatoteke))
+            {
+                rd.Zapiši("Ovo je moj upis");
+            }
         }
 
         // TODO:126 Staviti točku prekida (breakpoint) na poziv metode BrisanjeDatoteke, pokrenuti program i provjeriti sadržaj datoteke prije brisanja.
