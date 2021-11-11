@@ -30,9 +30,9 @@ namespace Vsite.CSharp.DefiniranjeTipa
         public static void PozivKonstruktoraSJednimArgumentom(double broj)
         {
             // :076 Stvoriti objekt pozivom konstruktora s jednim argumentom te ispisati vrijednosti članova.
-            Udaljenost u4 = new Udaljenost(30);
-            Console.WriteLine(u4.Broj);
-            Console.WriteLine(u4.Jedinica);
+            //Udaljenost u4 = new Udaljenost(30);
+            //Console.WriteLine(u4.Broj);
+            //Console.WriteLine(u4.Jedinica);
         }
 
         // :077 Pokrenuti testove i provjeriti prolaze li sva 3 testa u grupi TestKonstruktoraStrukture
