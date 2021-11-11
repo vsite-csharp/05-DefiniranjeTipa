@@ -24,8 +24,8 @@ namespace Vsite.CSharp.StatičkiČlanovi
         // 054 U metodu dodati naredbu koja će ispisati vrijednost člana "instanca"
         public void IspišiRedniBrojObjekta()
         {
-            mk2.IspišiRedniBrojObjekta();
-            mk1.IspišiRedniBrojObjekta();
+            //mk2.IspišiRedniBrojObjekta();
+            //mk1.IspišiRedniBrojObjekta();
 
         }
 
