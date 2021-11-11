@@ -6,7 +6,7 @@ namespace Vsite.CSharp.DefiniranjeTipa
     {
     }
 
-    class IzvedenaIzBazne  : Bazna
+    class IzvedenaIzBazne  
     {
     }
 
