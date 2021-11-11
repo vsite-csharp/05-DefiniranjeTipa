@@ -18,16 +18,16 @@ namespace Vsite.CSharp.DefiniranjeTipa
 
         public static void IspišiIzvedenuIzJavne()
         {
-            // TODO:030 Definiciju klase IzvedenaIzJavneBazne promijenite tako da je ona izvedena iz klase JavnaBazna.
+            // :030 Definiciju klase IzvedenaIzJavneBazne promijenite tako da je ona izvedena iz klase JavnaBazna.
             IzvedenaIzJavneBazne izvedenaIzJavne = new IzvedenaIzJavneBazne();
-            // TODO:031 Otkomentirajte donju naredbu, prevedite kod i provjerite radi li poziv ispravno.
-            //izvedenaIzJavne.IspišiMe();
+            // :031 Otkomentirajte donju naredbu, prevedite kod i provjerite radi li poziv ispravno.
+            izvedenaIzJavne.IspišiMe();
         }
 
         public static void IspišiIzvedenuIzBazne()
         {
-            // TODO:032 Definiciju klase IzvedenaIzBazne promijenite tako da je ona izvedena iz klase Bazna. Prevedite kod i popravite pogreške koje prevoditelj prijavljuje.
-            // TODO:033 Promijenite pravo pristupa klasi Bazna da se kod može prevesti.
+            // :032 Definiciju klase IzvedenaIzBazne promijenite tako da je ona izvedena iz klase Bazna. Prevedite kod i popravite pogreške koje prevoditelj prijavljuje.
+            // :033 Promijenite pravo pristupa klasi Bazna da se kod može prevesti.
             IzvedenaIzBazne izvedenaIzBazne = new IzvedenaIzBazne();
             // TODO:034 Otkomentirajte donju naredbu, prevedite kod i provjerite radi li poziv ispravno.
             //izvedenaIzBazne.IspišiMe();
