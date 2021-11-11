@@ -25,9 +25,11 @@ namespace Vsite.CSharp.DefiniranjeTipa
             // TODO:022 Pozvati metodu IspišiČlan za obje instance (ms1 i ms2).
 
             Console.WriteLine();
-            // TODO:023 Otkomentirati donju naredbu.
-            //ms2.tekst = "MyStruct";
-            // TODO:024 Ponovno pozvati metodu IspišiČlan za obje instance te obrazložiti rezultat.
+            // 023 Otkomentirati donju naredbu.
+            ms2.tekst = "MyStruct";
+            // 024 Ponovno pozvati metodu IspišiČlan za obje instance te obrazložiti rezultat.
+            ms1.ispišičlan();
+            ms2.ispišičlan();
 
         }
 
@@ -35,13 +37,14 @@ namespace Vsite.CSharp.DefiniranjeTipa
         {
             MojaKlasa mk1 = new MojaKlasa();
             MojaKlasa mk2 = mk1;
-            // TODO:026 Napisati naredbe koje pozivaju metodu IspišiČlan za obje instance.
+            // 026 Napisati naredbe koje pozivaju metodu IspišiČlan za obje instance.
 
             Console.WriteLine();
-            // TODO:027 Otkomentirati donju naredbu.
-            //mk2.broj = 2;
-            // TODO:028 Ponovno pozvati metodu IspišiČlan za obje instance te obrazložiti rezultat.
-
+            // 027 Otkomentirati donju naredbu.
+            mk2.broj = 2;
+            // 028 Ponovno pozvati metodu IspišiČlan za obje instance te obrazložiti rezultat.
+            mk1.ispišičlan();
+            mk2.ispišičlan();
         }
 
         // TODO:029 Pokrenuti testove i provjeriti prolaze li oba testa u grupi TestClass_Struct.
