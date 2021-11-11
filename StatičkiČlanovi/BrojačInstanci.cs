@@ -27,6 +27,6 @@ namespace Vsite.CSharp.StatičkiČlanovi
             Console.WriteLine(instanca);
         }
 
-        // TODO:055 Pokrenuti testove i provjeriti prolaze li oba testa u grupi TestStatičkihČlanova
+        // :055 Pokrenuti testove i provjeriti prolaze li oba testa u grupi TestStatičkihČlanova
     }
 }
