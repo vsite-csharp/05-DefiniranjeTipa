@@ -20,8 +20,13 @@ namespace Vsite.CSharp.DefiniranjeTipa
         }
     }
 
-    public class IzvedenaIzInterneBazne
+    public class IzvedenaIzInterneBazne //:InternaBazna
     {
-
+        //na ovaj način osiguravamo korisenje interne klase
+        public void IspišiMe()
+        {
+            var inter = new InternaBazna();
+            inter.IspišiMe();
+        }
     }
 }
