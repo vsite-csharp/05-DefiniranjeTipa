@@ -15,8 +15,9 @@ namespace Vsite.CSharp.DefiniranjeTipa
             sk.Metoda2();
         }
 
-        // TODO:090 Pokrenuti program, pogledati ispis i obrazložiti ga.
-
+        // :090 Pokrenuti program, pogledati ispis i obrazložiti ga.
+        // Statičkoj metodi može se pristupiti SaStatičkimKonstruktorom2.Meroda1(), ali nestatičkoj ne može nego se treba inicijalizirati 
+        // klasa i pozvati metoda preko nje 
         static void Main(string[] args)
         {
             PozoviSamoStatičkuMetodu();
