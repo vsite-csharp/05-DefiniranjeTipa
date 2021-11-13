@@ -15,7 +15,8 @@ namespace Vsite.CSharp.DefiniranjeTipa
             sk.Metoda2();
         }
 
-        // TODO:090 Pokrenuti program, pogledati ispis i obrazložiti ga.
+        // 090 Pokrenuti program, pogledati ispis i obrazložiti ga.
+        // Pozivi statičke i nestatičke metode gdje klasa sa nestatičkom metodom nasljeđuje klasu s statičku metodu
 
         static void Main(string[] args)
         {
