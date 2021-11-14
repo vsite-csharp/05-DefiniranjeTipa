@@ -16,7 +16,11 @@ namespace Vsite.CSharp.DefiniranjeTipa
         }
 
         // TODO:090 Pokrenuti program, pogledati ispis i obrazložiti ga.
-
+        //Ispis: SaStatickimKonstruktorom1.Metoda1
+        //       SaStatickimKonstruktorom2.Metoda2
+        //       GOTOVO!!!
+        //Statičkoj metodi se može pristupati direktno,dok je za pristup nestatičkoj metodi 
+        //potrebno inicijaliziratiinstancu klase pa preko nje pristupati.
         static void Main(string[] args)
         {
             PozoviSamoStatičkuMetodu();
