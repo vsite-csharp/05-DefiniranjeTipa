@@ -23,14 +23,14 @@
         //073 Promijeniti prazan konstruktor tako da prima dva argumenta ("broj" i "jedinica") kojima se inicijaliziraju članovi. 
         public Udaljenost(double broj, JedinicaDuljine jedinica)
         {
-            this.Broj = broj;
-            this.Jedinica = jedinica;
+            Broj = broj;
+            Jedinica = jedinica;
         }
         //075 Dodati konstruktor koji prima samo argument "broj", a član "Jedinica" će konstruktor postaviti na JedinicaDuljine.Metar.
         public Udaljenost(double broj)
         {
-            this.Broj = broj;
-            this.Jedinica = JedinicaDuljine.Metar;
+            Broj = broj;
+            Jedinica = JedinicaDuljine.Metar;
         }
     }
 }
