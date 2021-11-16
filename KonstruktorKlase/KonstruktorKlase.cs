@@ -22,7 +22,7 @@ namespace Vsite.CSharp.DefiniranjeTipa
             Console.WriteLine(o.DatumRođenja);
         }
 
-        // TODO:064 Pokrenuti testove i provjeriti prolazi li test u grupi TestKonstruktoraKlase
+        // 064 Pokrenuti testove i provjeriti prolazi li test u grupi TestKonstruktoraKlase
 
         static void Main(string[] args)
         {
