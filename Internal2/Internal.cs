@@ -35,12 +35,12 @@ namespace Vsite.CSharp.DefiniranjeTipa
 
         public static void IspišiIzvedenuIzInterneBazne()
         {
-            // TODO:035 U klasi IzvedenaIzInterneBazne treba, bez promjene prava pristupa, omogućiti poziv metode IspišiMe iz klase InternaBazna ali bez promjene koda klase InternaBazna!
+            // 035 U klasi IzvedenaIzInterneBazne treba, bez promjene prava pristupa, omogućiti poziv metode IspišiMe iz klase InternaBazna ali bez promjene koda klase InternaBazna!
             IzvedenaIzInterneBazne izvedenaIzInterne = new IzvedenaIzInterneBazne();
-            // TODO:036 Otkomentirati donju naredbu i provjeriti izvođenje.
-            //izvedenaIzInterne.IspišiMe();
+            // 036 Otkomentirati donju naredbu i provjeriti izvođenje.
+            izvedenaIzInterne.IspišiMe();
         }
 
-        // TODO:037 Pokrenuti testove i provjeriti prolaze li sva 3 testa u grupi TestInternal
+        // 037 Pokrenuti testove i provjeriti prolaze li sva 3 testa u grupi TestInternal
     }
 }
