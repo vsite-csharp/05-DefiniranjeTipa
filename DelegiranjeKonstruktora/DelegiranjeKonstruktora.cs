@@ -25,7 +25,7 @@ namespace Vsite.CSharp.DefiniranjeTipa
             Console.WriteLine(i.B);
         }
 
-        // TODO:088 Pokrenuti testove i provjeriti da oba testa u grupi TestDelegiranjaKonstruktora prolaze.
+        // :088 Pokrenuti testove i provjeriti da oba testa u grupi TestDelegiranjaKonstruktora prolaze.
         static void Main(string[] args)
         {
             StvoriInstancuIzvedeneKlaseKonstruktoromSDvaArgumenta(5, 7);
