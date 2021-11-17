@@ -13,7 +13,7 @@ namespace Vsite.CSharp.StatičkiČlanovi
             Console.WriteLine(brojač);
         }
 
-        // TODO:052 U klasu dodati privatni član "instanca" tipa int
+        // :052 U klasu dodati privatni član "instanca" tipa int
         private int instanca = 0;
 
         //:053 U konstruktor dodati naredbu koja će uvećati "brojač" za 1 i uvećanu vrijednost dodijeliti članu "instanca"
