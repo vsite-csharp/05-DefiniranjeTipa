@@ -25,6 +25,6 @@ namespace Vsite.CSharp.DefiniranjeTipa
             gu.PredstaviSeNeposredno();
         }
 
-        // TODO:043 Pokrenuti testove i provjeriti prolaze li sva 3 testa u grupi TestUgnježđena.
+        // :043 Pokrenuti testove i provjeriti prolaze li sva 3 testa u grupi TestUgnježđena.
     }
 }
