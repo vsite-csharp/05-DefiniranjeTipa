@@ -7,7 +7,7 @@ namespace Vsite.CSharp.StatičkiČlanovi
         // :050 Dodati privatni statički član "brojač" tipa int i inicijalizirati ga na 0
         private static int brojač = 0;
 
-        // TODO:051 U metodu dodati naredbu koja će ispisati trenutnu vrijednost člana brojač
+        // :051 U metodu dodati naredbu koja će ispisati trenutnu vrijednost člana brojač
         public static void IspišiBrojStvorenihObjekata()
         {
             //this ne mozemo staviti jer nije u jendoj instanci, nego je u svim instancama
