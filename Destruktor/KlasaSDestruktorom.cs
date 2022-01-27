@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Diagnostics;
 
+
 namespace Vsite.CSharp.DefiniranjeTipa
 {
     public class KlasaSDestruktorom
@@ -15,8 +16,12 @@ namespace Vsite.CSharp.DefiniranjeTipa
             Debug.WriteLine(poruka);
         }
 
-        // TODO:100 Dodati destruktor (tj. finalizirajuću metodu) i njemu napisati naredbe koje će u konzolu i u Output prozor ispisati: "Destruktor objekta br. {RedniBroj}"
-
+        // :100 Dodati destruktor (tj. finalizirajuću metodu) i njemu napisati naredbe koje će u konzolu i u Output prozor ispisati: "Destruktor objekta br. {RedniBroj}."
+        ~KlasaSDestruktorom()
+        {
+            Console.WriteLine($"Destruktor br: {RedniBroj}");
+            Debug.WriteLine($"Destruktor br: {RedniBroj}");
+        }
 
         public readonly int RedniBroj; // redni broj objekta
 
