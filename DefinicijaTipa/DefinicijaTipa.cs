@@ -12,51 +12,52 @@ namespace Vsite.CSharp.DefiniranjeTipa
         {
             Console.WriteLine(broj);
         }
+    }
 
 
-        struct MojaStruktura
+    struct MojaStruktura
+    {
+        // 013 Dodati privatno polje (podatkovni član) "tekst" tipa string i dodijeliti mu vrijednost "MojaStruktura"
+        private string tekst = "MojaStruktura";
+        // 014 Zadati javnu metodu IspišiČlan tipa void i u njoj dodati naredbu koja će ispisati podatkovni član "tekst".
+        public void IspišiČlan()
         {
-            // 013 Dodati privatno polje (podatkovni član) "tekst" tipa string i dodijeliti mu vrijednost "MojaStruktura"
-            private string tekst = "MojaStruktura";
-            // 014 Zadati javnu metodu IspišiČlan tipa void i u njoj dodati naredbu koja će ispisati podatkovni član "tekst".
-            public void IspišiČlan()
-            {
-                Console.WriteLine(tekst);
-            }
-            public MojaStruktura(string tekst)
-            {
-                this.tekst = tekst;
-            }
+            Console.WriteLine(tekst);
+        }
+        public MojaStruktura(string tekst)
+        {
+            this.tekst = tekst;
+        }
+    }
+
+
+    public class DefinicijaTipa
+    {
+        public static void IspišiČlanKlase()
+        {
+            // 012 Inicijalizirati objekt tipa MojaKlasa i pozvati njegovu metodu IspišiČlan
+            var mk = new MojaKlasa();
+            mk.IspišiČlan();
         }
 
-
-        class DefinicijaTipa
+        public static void IspišiČlanStrukture()
         {
-            public static void IspišiČlanKlase()
-            {
-                // 012 Inicijalizirati objekt tipa MojaKlasa i pozvati njegovu metodu IspišiČlan
-                var mk = new MojaKlasa();
-                mk.IspišiČlan();
-            }
+            // 015 Inicijalizirati objekt tipa MojaStruktura i pozvati njegovu metodu IspišiČlan koja treba ispisati "MojaStruktura".
+            var ms = new MojaStruktura("MojaStruktura");
+            ms.IspišiČlan();
+        }
 
-            public static void IspišiČlanStrukture()
-            {
-                // 015 Inicijalizirati objekt tipa MojaStruktura i pozvati njegovu metodu IspišiČlan koja treba ispisati "MojaStruktura".
-                var ms = new MojaStruktura("MojaStruktura");
-                ms.IspišiČlan();
-            }
+        // 016 Pokrenuti testove i provjeriti prolaze li oba testa u grupi TestDefinicijeTipa.
 
-            // 016 Pokrenuti testove i provjeriti prolaze li oba testa u grupi TestDefinicijeTipa.
+        static void Main(string[] args)
+        {
+            IspišiČlanKlase();
 
-            static void Main(string[] args)
-            {
-                IspišiČlanKlase();
+            IspišiČlanStrukture();
 
-                IspišiČlanStrukture();
-
-                Console.WriteLine("GOTOVO!!!");
-                Console.ReadKey();
-            }
+            Console.WriteLine("GOTOVO!!!");
+            Console.ReadKey();
         }
     }
 }
+
