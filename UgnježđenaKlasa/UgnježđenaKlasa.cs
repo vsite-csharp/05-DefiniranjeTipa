@@ -12,6 +12,9 @@ namespace Vsite.CSharp.DefiniranjeTipa
             IzvedenoGnijezdo ig = new IzvedenoGnijezdo();
             ig.PredstaviSe();
 
+            Gnijezdo.Ugnježđena gu = new Gnijezdo.Ugnježđena();
+            gu.PredstaviSeNeposredno();
+
             Console.WriteLine("GOTOVO!!!");
             Console.ReadKey();
         }
@@ -19,8 +22,10 @@ namespace Vsite.CSharp.DefiniranjeTipa
         public static void IzravnoKorištenjeUgnježđeneKlase()
         {
             // TODO:042 Modificirati definicije tako da se klasa Ugnježđena može pozivati izravno:
-            //Gnijezdo.Ugnježđena gu = new Gnijezdo.Ugnježđena();
-            //gu.PredstaviSeNeposredno();
+            
+            Gnijezdo.Ugnježđena gu = new Gnijezdo.Ugnježđena();
+            gu.PredstaviSeNeposredno();
+            
         }
 
         // TODO:043 Pokrenuti testove i provjeriti prolaze li sva 3 testa u grupi TestUgnježđena.
