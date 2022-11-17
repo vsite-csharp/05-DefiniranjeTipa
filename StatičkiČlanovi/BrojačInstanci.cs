@@ -29,6 +29,6 @@ namespace Vsite.CSharp.StatičkiČlanovi
 
         // :055 Pokrenuti program i pogledati ispis
         
-        // TODO:056 Pokrenuti testove i provjeriti prolaze li oba testa u grupi TestStatičkihČlanova
+        // :056 Pokrenuti testove i provjeriti prolaze li oba testa u grupi TestStatičkihČlanova
     }
 }
