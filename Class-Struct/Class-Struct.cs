@@ -60,7 +60,7 @@ namespace Vsite.CSharp.DefiniranjeTipa
             mk2.IspišiČlan();
         }
 
-        // TODO:029 Pokrenuti testove i provjeriti prolaze li oba testa u grupi TestClass_Struct.
+        // :029 Pokrenuti testove i provjeriti prolaze li oba testa u grupi TestClass_Struct.
 
         static void Main(string[] args)
         {
