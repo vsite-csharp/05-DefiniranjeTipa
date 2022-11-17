@@ -37,7 +37,7 @@ namespace Vsite.CSharp.DefiniranjeTipa
             
         }
 
-        // TODO:007 Pokrenuti testove i provjeriti da svih 5 testova u grupi TestKorištenjaObjekta prolaze
+        // :007 Pokrenuti testove i provjeriti da svih 5 testova u grupi TestKorištenjaObjekta prolaze
         static void Main(string[] args)
         {
             Thread.CurrentThread.CurrentCulture = new CultureInfo("hr");
