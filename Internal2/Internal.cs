@@ -41,6 +41,6 @@ namespace Vsite.CSharp.DefiniranjeTipa
             izvedenaIzInterne.IspišiMe();
         }
 
-        // TODO:037 Pokrenuti testove i provjeriti prolaze li sva 3 testa u grupi TestInternal
+        // :037 Pokrenuti testove i provjeriti prolaze li sva 3 testa u grupi TestInternal
     }
 }
