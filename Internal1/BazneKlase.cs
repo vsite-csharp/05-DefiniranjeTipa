@@ -10,7 +10,7 @@ namespace Vsite.CSharp.DefiniranjeTipa
         }
     }
 
-    class Bazna
+    public class Bazna // default is internal
     {
         public void IspišiMe()
         {
