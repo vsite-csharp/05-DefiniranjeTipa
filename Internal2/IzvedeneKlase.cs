@@ -1,4 +1,5 @@
 ﻿using System;
+using System.ComponentModel;
 
 namespace Vsite.CSharp.DefiniranjeTipa
 {
@@ -20,8 +21,12 @@ namespace Vsite.CSharp.DefiniranjeTipa
         }
     }
 
-    public class IzvedenaIzInterneBazne
+    public class IzvedenaIzInterneBazne : InternaBazna
     {
-
+         public void IspišiMe()
+        {
+            var o = new InternaBazna();
+            o.IspišiMe();
+        }
     }
 }

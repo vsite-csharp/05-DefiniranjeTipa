@@ -2,7 +2,7 @@
 
 namespace Vsite.CSharp.DefiniranjeTipa
 {
-    // TODO:020 Prekopirati kod strukture iz prethodnog primjera i promijeniti pravo pristupa članu "tekst" u public.
+    // :020 Prekopirati kod strukture iz prethodnog primjera i promijeniti pravo pristupa članu "tekst" u public.
     struct MojaStruktura
     {
 
@@ -44,7 +44,7 @@ namespace Vsite.CSharp.DefiniranjeTipa
         {
             MojaKlasa mk1 = new MojaKlasa();
             MojaKlasa mk2 = mk1;
-            // TODO:026 Napisati naredbe koje pozivaju metodu IspišiČlan za obje instance.
+            // :026 Napisati naredbe koje pozivaju metodu IspišiČlan za obje instance.
             mk1.IspišiČlan();
             mk2.IspišiČlan();
 
