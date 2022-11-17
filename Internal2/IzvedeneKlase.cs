@@ -2,11 +2,11 @@
 
 namespace Vsite.CSharp.DefiniranjeTipa
 {
-    class IzvedenaIzJavneBazne // : JavnaBazna
+    class IzvedenaIzJavneBazne : JavnaBazna
     {
     }
 
-    class IzvedenaIzBazne // : Bazna
+    class IzvedenaIzBazne : Bazna
     {
     }
 
@@ -19,9 +19,13 @@ namespace Vsite.CSharp.DefiniranjeTipa
             Console.WriteLine("InternaBazna");
         }
     }
-
+  
     public class IzvedenaIzInterneBazne
     {
-
+        public void IspišiMe()
+        {
+            InternaBazna ib = new InternaBazna();
+            ib.IspišiMe();
+        }
     }
 }
