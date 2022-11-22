@@ -7,7 +7,7 @@ namespace Vsite.CSharp.DefiniranjeTipa
         public static void StvoriObjektPodrazumijevanimKonstruktorom()
         {
             // :060 Stvoriti objekt klase Osoba i ispisati vrijednosti članova Ime, Prezime, DatumRođenja
-            var osoba = new Osoba();
+            // var osoba = new Osoba();
             //Console.WriteLine(osoba.Ime);
             //Console.WriteLine(osoba.Prezime);
             //Console.WriteLine(osoba.DatumRođenja);

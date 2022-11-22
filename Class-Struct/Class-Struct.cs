@@ -1,15 +1,25 @@
 ﻿using System;
+using static System.Net.Mime.MediaTypeNames;
 
 namespace Vsite.CSharp.DefiniranjeTipa
 {
     // :020 Prekopirati kod strukture iz prethodnog primjera i promijeniti pravo pristupa članu "tekst" u public.
     struct MojaStruktura
     {
+        public string tekst = "MojaStruktura";
 
+        public void IspišiČlan()
+        {
+            Console.WriteLine(tekst);
+        }
+        public MojaStruktura(string tekst)
+        {
+            this.tekst = tekst;
+        }
 
     }
 
-    // TODO:025 Prekopirati kod klase iz prethodnog primjera i promijeniti pravo pristupa članu "broj" u public.
+    // :025 Prekopirati kod klase iz prethodnog primjera i promijeniti pravo pristupa članu "broj" u public.
     class MojaKlasa
     {
         public int broj = 5;
@@ -56,7 +66,7 @@ namespace Vsite.CSharp.DefiniranjeTipa
             mk2.IspišiČlan();
         }
 
-        // TODO:029 Pokrenuti testove i provjeriti prolaze li oba testa u grupi TestClass_Struct.
+        // :029 Pokrenuti testove i provjeriti prolaze li oba testa u grupi TestClass_Struct.
 
         static void Main(string[] args)
         {

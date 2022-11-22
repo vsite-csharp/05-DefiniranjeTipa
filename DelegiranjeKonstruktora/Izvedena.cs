@@ -14,16 +14,13 @@
         }
         public Izvedena(int a) : this(a, 0)
         {
-            Console.WriteLine("Izvedena,Izvedena([0])", a);
+            Console.WriteLine(string.Format("Izvedena.Izvedena({0})", a));
         }
 
-        // TODO:084 Dodati konstruktor s jednim argumentom "a" tipa int. Taj konstruktor treba pozvati ("delegirati") prethodno definirani konstruktor 
+        // :084 Dodati konstruktor s jednim argumentom "a" tipa int. Taj konstruktor treba pozvati ("delegirati") prethodno definirani konstruktor 
         // klase Izvedena s dva argumenta s time da je prvi argument "a", a drugi argument je 0. 
-        // TODO:085 U tijelo konstruktora dodati naredbu za ispis: Console.WriteLine(string.Format("Izvedena.Izvedena({0})", a));
-        public Izvedena()
-        {
-            B = 0;
-        }
+        // :085 U tijelo konstruktora dodati naredbu za ispis: Console.WriteLine(string.Format("Izvedena.Izvedena({0})", a));
+
     }
 }
 

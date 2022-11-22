@@ -30,8 +30,8 @@ namespace Vsite.CSharp.StatičkiČlanovi
             Console.WriteLine(instanca);
         }
 
-        // TODO:055 Pokrenuti program i pogledati ispis
+        // :055 Pokrenuti program i pogledati ispis
         
-        // TODO:056 Pokrenuti testove i provjeriti prolaze li oba testa u grupi TestStatičkihČlanova
+        // :056 Pokrenuti testove i provjeriti prolaze li oba testa u grupi TestStatičkihČlanova
     }
 }

@@ -3,11 +3,11 @@ using System.ComponentModel;
 
 namespace Vsite.CSharp.DefiniranjeTipa
 {
-    class IzvedenaIzJavneBazne // : JavnaBazna
+    class IzvedenaIzJavneBazne : JavnaBazna
     {
     }
 
-    class IzvedenaIzBazne // : Bazna
+    class IzvedenaIzBazne : Bazna
     {
     }
 
@@ -21,7 +21,7 @@ namespace Vsite.CSharp.DefiniranjeTipa
         }
     }
 
-    public class IzvedenaIzInterneBazne : InternaBazna
+    public class IzvedenaIzInterneBazne
     {
          public void IspišiMe()
         {
