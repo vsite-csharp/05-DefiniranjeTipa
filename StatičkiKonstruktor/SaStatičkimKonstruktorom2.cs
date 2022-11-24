@@ -10,11 +10,14 @@ namespace Vsite.CSharp.DefiniranjeTipa
             Console.WriteLine("SaStatičkimKonstruktorom2.KonstruktorKlase");
         }
 
-        // TODO:095 Dodati statički konstruktor koji će ispisati poruku "SaStatičkimKonstruktorom2.StatičkiKonstruktor"
+        // 095 Dodati statički konstruktor koji će ispisati poruku "SaStatičkimKonstruktorom2.StatičkiKonstruktor"
+        static SaStatičkimKonstruktorom2()
+        {
+            Console.WriteLine("SaStatičkimKonstruktorom2.StatičkiKonstruktor");
+        }
+        // 096 Ponovno pokrenuti program i pogledati ispis
 
-        // TODO:096 Ponovno pokrenuti program i pogledati ispis
-
-        // TODO:097 Pokrenuti testove i provjeriti da oba testa u grupi TestStatičkogKonstruktora prolaze.
+        // 097 Pokrenuti testove i provjeriti da oba testa u grupi TestStatičkogKonstruktora prolaze.
         public void Metoda2()
         {
             Console.WriteLine("SaStatičkimKonstruktorom2.Metoda2");
