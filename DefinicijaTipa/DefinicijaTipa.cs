@@ -24,7 +24,7 @@ namespace Vsite.CSharp.DefiniranjeTipa
         {
             this.text = text;
         }
-        // TODO:014 Zadati javnu metodu IspišiČlan tipa void i u njoj dodati naredbu koja će ispisati podatkovni član "tekst".
+        // :014 Zadati javnu metodu IspišiČlan tipa void i u njoj dodati naredbu koja će ispisati podatkovni član "tekst".
         private string text; // = "MojaStruktura";
         public void IspišiČlan()
         {

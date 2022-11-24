@@ -42,9 +42,9 @@ namespace Vsite.CSharp.DefiniranjeTipa
             ms2.IspišiČlan();
 
             Console.WriteLine();
-            // TODO:023 Otkomentirati donju naredbu.
+            // :023 Otkomentirati donju naredbu.
             ms2.tekst = "MyStruct";
-            // TODO:024 Ponovno pozvati metodu IspišiČlan za obje instance te obrazložiti rezultat.
+            // :024 Ponovno pozvati metodu IspišiČlan za obje instance te obrazložiti rezultat.
             ms1.IspišiČlan();
             ms2.IspišiČlan();
 
@@ -59,9 +59,9 @@ namespace Vsite.CSharp.DefiniranjeTipa
             mk2.IspišiČlan();
 
             Console.WriteLine();
-            // TODO:027 Otkomentirati donju naredbu.
+            // :027 Otkomentirati donju naredbu.
             mk2.broj = 2;
-            // TODO:028 Ponovno pozvati metodu IspišiČlan za obje instance te obrazložiti rezultat.
+            // :028 Ponovno pozvati metodu IspišiČlan za obje instance te obrazložiti rezultat.
             mk1.IspišiČlan();
             mk2.IspišiČlan();
         }

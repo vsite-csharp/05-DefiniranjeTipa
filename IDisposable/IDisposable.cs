@@ -5,8 +5,8 @@ namespace Vsite.CSharp.DefiniranjeTipa
 {
     // TODO:122 Deklarirati da klasa implementira IDisposable sučelje te dodati javnu metodu Dispose.
     // TODO:123 Dodati u klasu metodu protected virtual void Dispose(bool disposing) i u nju prebaciti poziv StreamWriter.Close iz destruktora.
-    // TODO:124 Napraviti pozive metode iz destruktora i iz javne metode Dispose.
-    class RadSdatotekom
+    // :124 Napraviti pozive metode iz destruktora i iz javne metode Dispose.
+    class RadSdatotekom : IDisposable
     {
         private StreamWriter sw;
 
@@ -18,22 +18,34 @@ namespace Vsite.CSharp.DefiniranjeTipa
         public void Zapiši(string tekst)
         {
             sw.Write(tekst);
+            sw.Flush();
         }
 
-        // TODO:121 Dodati klasi destruktor koji će pozvati metodu StreamWriter.Close (odn. StreamWriter.Dispose). Pokrenuti program i provjeriti ispis.
+        public void Dispose()
+        {
+            throw new NotImplementedException();
+        }
+
+        // :121 Dodati klasi destruktor koji će pozvati metodu StreamWriter.Close (odn. StreamWriter.Dispose). Pokrenuti program i provjeriti ispis.
+        ~RadSdatotekom()
+        {
+            sw.Close();
+        }
     }
 
     class Disposable
     {
         public static void StvaranjeIPisanjeUDatoteku(string imeDatoteke)
         {
-            RadSdatotekom rd = new RadSdatotekom(imeDatoteke);
+            //RadSdatotekom rd = new RadSdatotekom(imeDatoteke);
+            //rd.Zapiši("Ovo je moj upis");
+
+            // :125 Dodati poziv metode RadSDatotekom.Dispose.
+            //rd.Dispose();
+
+            // :127 Preraditi kod metode tako da se umjesto metode Dispose koristi blok using.
+            using RadSdatotekom rd = new RadSdatotekom(imeDatoteke);
             rd.Zapiši("Ovo je moj upis");
-
-            // TODO:125 Dodati poziv metode RadSDatotekom.Dispose.
-
-            // TODO:127 Preraditi kod metode tako da se umjesto metode Dispose koristi blok using.
-
         }
 
         // TODO:126 Staviti točku prekida (breakpoint) na poziv metode BrisanjeDatoteke, pokrenuti program i provjeriti sadržaj datoteke prije brisanja.
@@ -42,7 +54,7 @@ namespace Vsite.CSharp.DefiniranjeTipa
             File.Delete(imeDatoteke);
         }
 
-        // TODO:120 Pokrenuti program i pogledati ispis. Provjeriti sadržaj datoteke "moj.txt".
+        // :120 Pokrenuti program i pogledati ispis. Provjeriti sadržaj datoteke "moj.txt".
         static void Main(string[] args)
         {
             try

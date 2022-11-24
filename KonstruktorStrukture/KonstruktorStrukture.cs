@@ -29,7 +29,7 @@ namespace Vsite.CSharp.DefiniranjeTipa
 
         public static void PozivKonstruktoraSJednimArgumentom(double broj)
         {
-            // TODO:076 Stvoriti objekt pozivom konstruktora s jednim argumentom te ispisati vrijednosti članova.
+            // :076 Stvoriti objekt pozivom konstruktora s jednim argumentom te ispisati vrijednosti članova.
             var udaljenost = new Udaljenost(broj);
             Console.WriteLine(udaljenost.Broj);
             Console.WriteLine(udaljenost.Jedinica);
