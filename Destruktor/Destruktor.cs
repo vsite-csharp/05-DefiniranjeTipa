@@ -6,13 +6,24 @@ namespace Vsite.CSharp.DefiniranjeTipa
     {
         static void Main(string[] args)
         {
+            var mem = GC.GetGCMemoryInfo().TotalAvailableMemoryBytes;
             Console.WriteLine("Ušao sam u 'Main'");
+
+            Console.WriteLine(mem/1024/1024);
+
             {
                 KlasaSDestruktorom ksd = new KlasaSDestruktorom();
+                var dummy = new byte[mem / 1000];
             }
 
             // TODO:101 Dodati for petlju koja će se ponoviti 100000 puta i unutar koje će se kreirati novi objekti tipa KlasaSDestruktorom. Pokrenuti program i provjeriti redni broj prvog uništenog objekta.
-
+            for (int i = 0; i < 10000; ++i)
+            {
+                KlasaSDestruktorom ksd = new KlasaSDestruktorom();
+                var dummy = new byte[mem / 1000];
+            }
+            
+            
             Console.WriteLine("GOTOVO!!!");
             Console.ReadKey();
 
