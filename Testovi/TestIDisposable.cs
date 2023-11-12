@@ -1,7 +1,4 @@
-﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
-using System.IO;
-
-namespace Vsite.CSharp.DefiniranjeTipa.Testovi
+﻿namespace Vsite.CSharp.DefiniranjeTipa.Testovi
 {
     [TestClass]
     public class TestIDisposable

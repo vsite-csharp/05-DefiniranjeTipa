@@ -1,10 +1,8 @@
-﻿using System;
-using System.Globalization;
-using System.Threading;
+﻿using System.Globalization;
 
 namespace Vsite.CSharp.DefiniranjeTipa
 {
-    class KorištenjeObjekata
+    static class KorištenjeObjekata
     {
         // TODO:000 Ispisati trenutni datum i vrijeme pomoću statičkog svojstva DateTime.Now
         public static void IspišiTrenutniDatumVrijeme()

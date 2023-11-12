@@ -1,8 +1,6 @@
-﻿using System;
-
-namespace Vsite.CSharp.StatičkiČlanovi
+﻿namespace Vsite.CSharp.StatičkiČlanovi
 {
-    class Program
+    static class Program
     {
         static void Main(string[] args)
         {

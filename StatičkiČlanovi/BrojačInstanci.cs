@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace Vsite.CSharp.StatičkiČlanovi
+﻿namespace Vsite.CSharp.StatičkiČlanovi
 {
     class BrojačInstanci
     {

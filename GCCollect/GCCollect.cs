@@ -1,9 +1,8 @@
-﻿using System;
-using System.Diagnostics;
+﻿using System.Diagnostics;
 
 namespace Vsite.CSharp.DefiniranjeTipa
 {
-    class Program
+    static class Program
     {
         // TODO:110 Staviti točku prekida (breakpoint) u destruktor klase KlasaSDestruktorm, pokrenuti program i pogledati zadnje ispise prije prekida izvođenja.
         static void Main(string[] args)

@@ -1,5 +1,4 @@
-﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
-using System.Reflection;
+﻿using System.Reflection;
 
 namespace Vsite.CSharp.DefiniranjeTipa.Testovi
 {
@@ -10,14 +9,14 @@ namespace Vsite.CSharp.DefiniranjeTipa.Testovi
         public void IzvedenaIzJavneBazne_IspišiMePozivaMetoduUBaznojKlasi()
         {
             Internal.IspišiIzvedenuIzJavne();
-            Assert.AreEqual("JavnaBazna", cw.GetString());
+            Assert.AreEqual("JavnaBazna", cw?.GetString());
         }
 
         [TestMethod]
         public void IzvedenaIzBazne_IspišiMePozivaMetoduUBaznojKlasi()
         {
             Internal.IspišiIzvedenuIzBazne();
-            Assert.AreEqual("???Bazna", cw.GetString());
+            Assert.AreEqual("???Bazna", cw?.GetString());
         }
 
         [TestMethod]
@@ -29,7 +28,7 @@ namespace Vsite.CSharp.DefiniranjeTipa.Testovi
             Assert.IsNotNull(metoda);
             metoda.Invoke(izvedanaIzInterneBazne, new object[] { });
 
-            Assert.AreEqual("InternaBazna", cw.GetString());
+            Assert.AreEqual("InternaBazna", cw?.GetString());
         }
     }
 }

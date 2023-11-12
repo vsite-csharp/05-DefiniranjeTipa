@@ -1,8 +1,6 @@
-﻿using System;
-
-namespace Vsite.CSharp.DefiniranjeTipa
+﻿namespace Vsite.CSharp.DefiniranjeTipa
 {
-    class KonstruktorStrukture
+    static class KonstruktorStrukture
     {
         public static void PozivPodrazumijevanogKonstruktora()
         {

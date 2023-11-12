@@ -1,6 +1,4 @@
-﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
-
-namespace Vsite.CSharp.DefiniranjeTipa.Testovi
+﻿namespace Vsite.CSharp.DefiniranjeTipa.Testovi
 {
     [TestClass]
     public class TestDefinicijeTipa : ConsoleTest
@@ -9,14 +7,14 @@ namespace Vsite.CSharp.DefiniranjeTipa.Testovi
         public void MojaKlasaIspišiČlanIspisuje5()
         {
             DefinicijaTipa.IspišiČlanKlase();
-            Assert.AreEqual(5, cw.GetInt());
+            Assert.AreEqual(5, cw?.GetInt());
         }
 
         [TestMethod]
         public void MojaStrukturaIspišiČlanIspisujeMojaStruktura()
         {
             DefinicijaTipa.IspišiČlanStrukture();
-            Assert.AreEqual("MojaStruktura", cw.GetString());
+            Assert.AreEqual("MojaStruktura", cw?.GetString());
         }
     }
 }

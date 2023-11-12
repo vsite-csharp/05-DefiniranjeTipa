@@ -1,8 +1,6 @@
-﻿using System;
-
-namespace Vsite.CSharp.DefiniranjeTipa
+﻿namespace Vsite.CSharp.DefiniranjeTipa
 {
-    class DelegiranjeKonstruktora
+    static class DelegiranjeKonstruktora
     {
 
         public static void StvoriInstancuIzvedeneKlaseKonstruktoromSDvaArgumenta(int a, int b)

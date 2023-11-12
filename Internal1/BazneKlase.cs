@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace Vsite.CSharp.DefiniranjeTipa
+﻿namespace Vsite.CSharp.DefiniranjeTipa
 {
     public class JavnaBazna
     {

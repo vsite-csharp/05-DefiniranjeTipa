@@ -1,8 +1,6 @@
-﻿using System;
-
-namespace Vsite.CSharp.DefiniranjeTipa
+﻿namespace Vsite.CSharp.DefiniranjeTipa
 {
-    class StatičkiKonstruktor
+    static class StatičkiKonstruktor
     {
         public static void PozoviSamoStatičkuMetodu()
         {

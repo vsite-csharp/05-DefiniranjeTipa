@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace Vsite.CSharp.DefiniranjeTipa
+﻿namespace Vsite.CSharp.DefiniranjeTipa
 {
     class MojaKlasa
     {
@@ -20,7 +18,7 @@ namespace Vsite.CSharp.DefiniranjeTipa
     }
 
 
-    class DefinicijaTipa
+    static class DefinicijaTipa
     {
         public static void IspišiČlanKlase()
         {

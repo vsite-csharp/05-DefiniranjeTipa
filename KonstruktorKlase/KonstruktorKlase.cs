@@ -1,8 +1,6 @@
-﻿using System;
-
-namespace Vsite.CSharp.DefiniranjeTipa
+﻿namespace Vsite.CSharp.DefiniranjeTipa
 {
-    class KonstruktorKlase
+    static class KonstruktorKlase
     {
         public static void StvoriObjektPodrazumijevanimKonstruktorom()
         {
@@ -22,7 +20,7 @@ namespace Vsite.CSharp.DefiniranjeTipa
         {
             StvoriObjektPodrazumijevanimKonstruktorom();
 
-            StvoriObjektZadanimKonstruktorom("Hrvoje", "Horvat", new DateTime(1971, 7, 4));
+            StvoriObjektZadanimKonstruktorom(ime: "Hrvoje", prezime: "Horvat", datumRođenja: new DateTime(1971, 7, 4));
 
             Console.WriteLine("GOTOVO!!!");
             Console.ReadKey();

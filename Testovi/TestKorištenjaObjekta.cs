@@ -1,6 +1,4 @@
-﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
-using System;
-using System.Globalization;
+﻿using System.Globalization;
 
 namespace Vsite.CSharp.DefiniranjeTipa.Testovi
 {
@@ -29,7 +27,7 @@ namespace Vsite.CSharp.DefiniranjeTipa.Testovi
             return vrijemeUMinutama >= početniTrenutak.AddMinutes(-1) && vrijemeUMinutama <= završniTrenutak;
         }
 
-        private DateTime početniTrenutak = DateTime.Now;
+        private readonly DateTime početniTrenutak = DateTime.Now;
         private DateTime završniTrenutak;
     }
 
@@ -42,9 +40,9 @@ namespace Vsite.CSharp.DefiniranjeTipa.Testovi
             VremenskiInterval vi = new VremenskiInterval();
             KorištenjeObjekata.IspišiTrenutniDatumVrijeme();
 
-            Assert.IsFalse(cw.IsEmpty);
-            object obj = cw.GetObject();
-            string ispisano = obj as string;
+            Assert.IsFalse(cw?.IsEmpty);
+            object obj = cw?.GetObject()!;
+            string? ispisano = obj as string;
             DateTime ispisanoVrijeme = ispisano != null ? DateTime.Parse(ispisano) : (DateTime)obj;
             Assert.IsTrue(vi.JeLiTrenutakIzIntervala(ispisanoVrijeme));
         }
@@ -55,8 +53,8 @@ namespace Vsite.CSharp.DefiniranjeTipa.Testovi
             VremenskiInterval vi = new VremenskiInterval();
             KorištenjeObjekata.IspišiDanašnjiDatum();
 
-            Assert.IsFalse(cw.IsEmpty);
-            DateTime ispisaniDatum = DateTime.ParseExact(cw.GetString(), CultureInfo.CurrentCulture.DateTimeFormat.ShortDatePattern, CultureInfo.CurrentCulture);
+            Assert.IsFalse(cw?.IsEmpty);
+            DateTime ispisaniDatum = DateTime.ParseExact(cw?.GetString()!, CultureInfo.CurrentCulture.DateTimeFormat.ShortDatePattern, CultureInfo.CurrentCulture);
             Assert.IsTrue(vi.JeLiDatumIzIntervala(ispisaniDatum));
         }
 
@@ -66,8 +64,8 @@ namespace Vsite.CSharp.DefiniranjeTipa.Testovi
             VremenskiInterval vi = new VremenskiInterval();
             KorištenjeObjekata.IspišiTrenutnoVrijeme();
 
-            Assert.IsFalse(cw.IsEmpty);
-            DateTime ispisanoVrijeme = DateTime.ParseExact(cw.GetString(), CultureInfo.CurrentCulture.DateTimeFormat.ShortTimePattern, CultureInfo.CurrentCulture);
+            Assert.IsFalse(cw?.IsEmpty);
+            DateTime ispisanoVrijeme = DateTime.ParseExact(cw?.GetString()!, CultureInfo.CurrentCulture.DateTimeFormat.ShortTimePattern, CultureInfo.CurrentCulture);
             Assert.IsTrue(vi.JeLiVrijemeUDanuUMinutamaIzIntervala(ispisanoVrijeme));
         }
 

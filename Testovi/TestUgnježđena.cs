@@ -1,6 +1,4 @@
-﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
-
-namespace Vsite.CSharp.DefiniranjeTipa.Testovi
+﻿namespace Vsite.CSharp.DefiniranjeTipa.Testovi
 {
     [TestClass]
     public class TestUgnježđena : ConsoleTest
@@ -10,7 +8,7 @@ namespace Vsite.CSharp.DefiniranjeTipa.Testovi
         {
             Gnijezdo g = new Gnijezdo();
             g.IspišiMe();
-            Assert.AreEqual("Ugnježđena", cw.GetString());
+            Assert.AreEqual("Ugnježđena", cw?.GetString());
             
         }
 
@@ -19,14 +17,14 @@ namespace Vsite.CSharp.DefiniranjeTipa.Testovi
         {
             IzvedenoGnijezdo ig = new IzvedenoGnijezdo();
             ig.PredstaviSe();
-            Assert.AreEqual("Ja sam klasa Ugnježđena", cw.GetString());
+            Assert.AreEqual("Ja sam klasa Ugnježđena", cw?.GetString());
         }
 
         [TestMethod]
         public void IzravnoKorištenjeUgnježđeneKlase()
         {
             UgnježđenaKlasa.IzravnoKorištenjeUgnježđeneKlase();
-            Assert.AreEqual("Ja sam klasa Ugnježđena, neposredno", cw.GetString());
+            Assert.AreEqual("Ja sam klasa Ugnježđena, neposredno", cw?.GetString());
         }
     }
 }

@@ -1,14 +1,11 @@
-﻿using System;
-using System.IO;
-
-namespace Vsite.CSharp.DefiniranjeTipa
+﻿namespace Vsite.CSharp.DefiniranjeTipa
 {
     // TODO:122 Deklarirati da klasa implementira IDisposable sučelje te dodati javnu metodu Dispose.
     // TODO:123 Dodati u klasu metodu protected virtual void Dispose(bool disposing) i u nju prebaciti poziv StreamWriter.Close iz destruktora.
     // TODO:124 Napraviti pozive metode iz destruktora i iz javne metode Dispose.
     class RadSdatotekom
     {
-        private StreamWriter sw;
+        private readonly StreamWriter sw;
 
         public RadSdatotekom(string imeDatoteke)
         {
@@ -23,7 +20,7 @@ namespace Vsite.CSharp.DefiniranjeTipa
         // TODO:121 Dodati klasi destruktor koji će pozvati metodu StreamWriter.Close (odn. StreamWriter.Dispose). Pokrenuti program i provjeriti ispis.
     }
 
-    class Disposable
+    static class Disposable
     {
         public static void StvaranjeIPisanjeUDatoteku(string imeDatoteke)
         {

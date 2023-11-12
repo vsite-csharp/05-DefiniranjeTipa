@@ -1,8 +1,6 @@
-﻿using System;
-
-namespace Vsite.CSharp.DefiniranjeTipa
+﻿namespace Vsite.CSharp.DefiniranjeTipa
 {
-    class Internal
+    static class Internal
     {
         static void Main(string[] args)
         {

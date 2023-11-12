@@ -1,6 +1,4 @@
-﻿using System;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
-using Vsite.CSharp.StatičkiČlanovi;
+﻿using Vsite.CSharp.StatičkiČlanovi;
 
 namespace Vsite.CSharp.DefiniranjeTipa.Testovi
 {
@@ -11,9 +9,9 @@ namespace Vsite.CSharp.DefiniranjeTipa.Testovi
         public void IspišiBrojStvorenihObjekataIspisujeBrojStvorenihObjekata()
         {
             BrojačInstanci.IspišiBrojStvorenihObjekata();
-            int brojObjekata = cw.GetInt();
+            int brojObjekata = cw!.GetInt();
 
-            BrojačInstanci bi = new BrojačInstanci();
+            var bi = new BrojačInstanci();
             BrojačInstanci.IspišiBrojStvorenihObjekata();
             Assert.AreEqual(++brojObjekata, cw.GetInt());
 
@@ -26,9 +24,9 @@ namespace Vsite.CSharp.DefiniranjeTipa.Testovi
         public void IspišiRedniBrojObjektaIspisujeRedniBroj()
         {
             BrojačInstanci.IspišiBrojStvorenihObjekata();
-            int brojObjekata = cw.GetInt();
+            int brojObjekata = cw!.GetInt();
 
-            BrojačInstanci bi = new BrojačInstanci();
+            var bi = new BrojačInstanci();
             bi.IspišiRedniBrojObjekta();
             Assert.AreEqual(++brojObjekata, cw.GetInt());
 

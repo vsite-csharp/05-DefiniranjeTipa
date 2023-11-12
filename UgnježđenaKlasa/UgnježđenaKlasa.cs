@@ -1,8 +1,6 @@
-﻿using System;
-
-namespace Vsite.CSharp.DefiniranjeTipa
+﻿namespace Vsite.CSharp.DefiniranjeTipa
 {
-    class UgnježđenaKlasa
+    static class UgnježđenaKlasa
     {
         static void Main(string[] args)
         {
