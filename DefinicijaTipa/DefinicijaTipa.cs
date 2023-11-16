@@ -17,7 +17,7 @@
         public MojaStruktura()
         {
         }
-        // TODO:013 Dodati privatno polje (podatkovni član) "tekst" tipa string i dodijeliti mu vrijednost "MojaStruktura"
+        // :013 Dodati privatno polje (podatkovni član) "tekst" tipa string i dodijeliti mu vrijednost "MojaStruktura"
         private string tekst = "MojaStruktura";
         // :014 Zadati javnu metodu IspišiČlan tipa void i u njoj dodati naredbu koja će ispisati podatkovni član "tekst".
         public void IspišiČlan()
@@ -39,8 +39,8 @@
         public static void IspišiČlanStrukture()
         {
             // :015 Inicijalizirati objekt tipa MojaStruktura i pozvati njegovu metodu IspišiČlan koja treba ispisati "MojaStruktura".
-            var es = new MojaStruktura();
-            es.IspišiČlan();
+            var ms = new MojaStruktura();
+            ms.IspišiČlan();
         }
 
         // :016 Pokrenuti testove i provjeriti prolaze li oba testa u grupi TestDefinicijeTipa.
