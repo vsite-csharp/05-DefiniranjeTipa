@@ -53,15 +53,15 @@
             // :026 Napisati naredbe koje pozivaju metodu IspišiČlan za obje instance.
 
             Console.WriteLine();
-            // TODO:027 Otkomentirati donju naredbu.
+            // :027 Otkomentirati donju naredbu.
             mk2.broj = 2;
-            // TODO:028 Ponovno pozvati metodu IspišiČlan za obje instance te obrazložiti rezultat.
+            // :028 Ponovno pozvati metodu IspišiČlan za obje instance te obrazložiti rezultat.
             mk1.IspišiČlan();
             mk2.IspišiČlan();
             // klase su referentni tip -> kopira se adresa u memoriji članova bazne klase koja se kopira. -> obje vrijednosti su promjenjene
         }
 
-        // TODO:029 Pokrenuti testove i provjeriti prolaze li oba testa u grupi TestClass_Struct.
+        // :029 Pokrenuti testove i provjeriti prolaze li oba testa u grupi TestClass_Struct.
 
         static void Main(string[] args)
         {
