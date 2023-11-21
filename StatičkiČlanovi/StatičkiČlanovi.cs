@@ -20,7 +20,6 @@
             mk2.IspišiRedniBrojObjekta();
 
             Console.WriteLine("GOTOVO!!!");
-            Console.ReadKey();
         }
     }
 }

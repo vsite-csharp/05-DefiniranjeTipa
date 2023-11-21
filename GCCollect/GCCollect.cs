@@ -21,8 +21,8 @@ namespace Vsite.CSharp.DefiniranjeTipa
             // redoslijed uništavanja objekata nije unaprijed određen!
             GC.Collect();
 
-            Debug.WriteLine("*** GOTOVO!!! ***");
-            Console.WriteLine("GOTOVO!!!");
+            Debug.WriteLine("*** Završio je poziv GC.Collect()!!! ***");
+            Console.WriteLine("Završio je poziv GC.Collect()!!!");
             Console.ReadKey();
 
             Debug.WriteLine("*** SADA JE KONAČNO!!! ***");

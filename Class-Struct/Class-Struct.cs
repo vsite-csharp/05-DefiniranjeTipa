@@ -54,7 +54,6 @@
             Console.WriteLine();
 
             Console.WriteLine("GOTOVO!!!");
-            Console.ReadKey();
         }
     }
 }
