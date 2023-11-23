@@ -13,7 +13,8 @@
             sk.Metoda2();
         }
 
-        // TODO:090 Pokrenuti program, pogledati ispis i obrazložiti ga.
+        // :090 Pokrenuti program, pogledati ispis i obrazložiti ga.
+        // Poziva se statički konstruktor, koji poziva statičku metodu. Primjer je npr. Math.Sin() ili slična klasa koju ne inicijaliziramo, već samo metode pozivamo
 
         static void Main(string[] args)
         {
