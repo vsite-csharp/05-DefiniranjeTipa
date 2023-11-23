@@ -5,7 +5,7 @@
         public static void StvoriObjektPodrazumijevanimKonstruktorom()
         {
             // TODO:060 Stvoriti objekt klase Osoba i ispisati vrijednosti članova Ime, Prezime, DatumRođenja
-
+            var o = new Osoba();
         }
 
         public static void StvoriObjektZadanimKonstruktorom(string ime, string prezime, DateTime datumRođenja)
