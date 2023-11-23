@@ -2,7 +2,7 @@
 {
     class Gnijezdo
     {
-        class Ugnježđena
+        public class Ugnježđena
         {
             public void IspišiMe()
             {
