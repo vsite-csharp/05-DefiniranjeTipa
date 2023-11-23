@@ -13,7 +13,7 @@
             Prezime = "Peric";
             DatumRođenja = DateTime.Now;
         }
-        // TODO:062 Promijeniti prazan konstruktor tako da prima 3 argumenta (ime, prezime, datumRođenja) kojima se inicijaliziraju članovi objekta.
+        // :062 Promijeniti prazan konstruktor tako da prima 3 argumenta (ime, prezime, datumRođenja) kojima se inicijaliziraju članovi objekta.
         public Osoba(string ime, string prezime,  DateTime datumRodenja)
         {
             Ime = ime;
