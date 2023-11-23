@@ -4,17 +4,27 @@
     {
         public static void StvoriObjektPodrazumijevanimKonstruktorom()
         {
-            // TODO:060 Stvoriti objekt klase Osoba i ispisati vrijednosti članova Ime, Prezime, DatumRođenja
+            // :060 Stvoriti objekt klase Osoba i ispisati vrijednosti članova Ime, Prezime, DatumRođenja
+           // var o = new Osoba();
+          //  Console.WriteLine(o.Ime);
 
+            //Console.WriteLine(o.Prezime);
+
+           // Console.WriteLine(o.DatumRođenja);
         }
 
         public static void StvoriObjektZadanimKonstruktorom(string ime, string prezime, DateTime datumRođenja)
         {
-            // TODO:063 Stvoriti objekt klase Osoba pozivom tog konstruktora i ispisati vrijednosti članova Ime, Prezime, DatumRođenja
+            // :063 Stvoriti objekt klase Osoba pozivom tog konstruktora i ispisati vrijednosti članova Ime, Prezime, DatumRođenja
+            var o = new Osoba(ime, prezime, datumRođenja);
+            Console.WriteLine(o.Ime);
 
+            Console.WriteLine(o.Prezime);
+
+            Console.WriteLine(o.DatumRođenja);
         }
 
-        // TODO:064 Pokrenuti testove i provjeriti prolazi li test u grupi TestKonstruktoraKlase
+        // :064 Pokrenuti testove i provjeriti prolazi li test u grupi TestKonstruktoraKlase
 
         static void Main(string[] args)
         {
