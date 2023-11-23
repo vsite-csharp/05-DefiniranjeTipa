@@ -2,13 +2,14 @@
 {
     class BrojačInstanci
     {
-        // TODO:050 Dodati privatni statički član "brojač" tipa int i inicijalizirati ga na 0
-
+        // :050 Dodati privatni statički član "brojač" tipa int i inicijalizirati ga na 0
+        private static int brojac = 0;
+        private int instanca;
 
         // TODO:051 U metodu dodati naredbu koja će ispisati trenutnu vrijednost člana brojač
         public static void IspišiBrojStvorenihObjekata()
         {
-
+            Console.WriteLine(brojac);
         }
 
         // TODO:052 U klasu dodati privatni član "instanca" tipa int
