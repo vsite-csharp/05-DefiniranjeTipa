@@ -13,6 +13,12 @@
             Prezime= string.Empty;
             DatumRođenja= DateTime.MinValue;
         }
-        // TODO:062 Promijeniti prazan konstruktor tako da prima 3 argumenta (ime, prezime, datumRođenja) kojima se inicijaliziraju članovi objekta.
+        public Osoba(string ime,string prezime, DateTime dr)
+        {
+            Ime = ime;
+            Prezime = prezime;
+            DatumRođenja = dr;
+        }
+        // 062 Promijeniti prazan konstruktor tako da prima 3 argumenta (ime, prezime, datumRođenja) kojima se inicijaliziraju članovi objekta.
     }
 }
