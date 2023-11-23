@@ -1,9 +1,21 @@
 ﻿namespace Vsite.CSharp.DefiniranjeTipa
 {
-    class Izvedena // : Bazna
+    class Izvedena  : Bazna
     {
         public readonly int B;
 
+        public Izvedena(int a, int b) : base(a)
+        {
+            B = b;
+            Console.WriteLine(string.Format("Izvedena.Izvedena({0}, {1})", a, b));
+            //Console.WriteLine($"Izvedena.Izvedena({a}, {b})");  //može i ovako
+        }
+
+        public Izvedena(int a) : this(a,0)
+        {
+           
+            Console.WriteLine($"Izvedena.Izvedena({a})");
+        }
         // TODO:080 Proglasiti da je ova klasa izvedena iz klase Bazna te joj definirati konstruktor s dva argumenta ("a" i "b") tipa int, 
         // kojima će se inicijalizirati članovi A i B. Konstruktor treba pozivati konstruktor bazne klase s jednim argumentom i proslijediti mu argument a.
         // TODO:081 U tijelo konstruktora dodati naredbu za ispis: Console.WriteLine(string.Format("Izvedena.Izvedena({0}, {1})", a, b));
