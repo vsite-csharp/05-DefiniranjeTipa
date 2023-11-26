@@ -1,49 +1,85 @@
 ﻿namespace Vsite.CSharp.DefiniranjeTipa
 {
-    // TODO:020 Prekopirati kod strukture iz prethodnog primjera
-    // TODO:021 Strukturi dodati javnu metodu PromijeniČlan tipa void i u njoj napisati naredbu kojom će se podatkovni član "tekst" promijeniti u vrijednost zadanu parametrom metode.
-    struct MojaStruktura
-    {
+	// 020 Prekopirati kod strukture iz prethodnog primjera
+	struct MojaStruktura
+	{
+		public MojaStruktura(string tekst) {
+        this.tekst = tekst;
+        }
+
+		// :013 Dodati privatno polje (podatkovni član) "tekst" tipa string i dodijeliti mu vrijednost "MojaStruktura"
+
+		public string tekst = "MojaStruktura";
+
+		// :014 Zadati javnu metodu IspišiČlan tipa void i u njoj dodati naredbu koja će ispisati podatkovni član "tekst".
+		public void IspišiČlan()
+		{
+			Console.WriteLine(tekst);
+		}
+
+     
+
+	}
 
 
-    }
-
-    // TODO:025 Prekopirati kod klase iz prethodnog primjera.
-    // TODO:026 Klasi dodati javnu metodu PromijeniČlan tipa void i u njoj napisati naredbu kojom će se podatkovni član "broj" promijeniti u vrijednost zadanu parametrom metode.
+    // 025 Prekopirati kod klase iz prethodnog primjera.
+    // 026 Klasi dodati javnu metodu PromijeniČlan tipa void i u njoj napisati naredbu kojom će se podatkovni član "broj" promijeniti u vrijednost zadanu parametrom metode.
     class MojaKlasa
     {
+		public int broj = 5;
 
-    }
+		// :011 Zadati javnu metodu IspišiČlan tipa void i u njoj dodati naredbu koja će ispisati podatkovni član "broj".
+
+		public void IspišiČlan()
+		{
+			Console.WriteLine(broj);
+		}
+
+	}
 
     static class ClassStruct
     {
         public static void IspišiStrukture()
         {
-            MojaStruktura ms1 = new MojaStruktura();
+	
+            MojaStruktura ms1 = new MojaStruktura("MojaStruktura");
             MojaStruktura ms2 = ms1;
-            // TODO:022 Pozvati metodu IspišiČlan za obje instance (ms1 i ms2).
+            // 022 Pozvati metodu IspišiČlan za obje instance (ms1 i ms2).
+
+            ms1.IspišiČlan();
+            ms2.IspišiČlan();
 
             Console.WriteLine();
-            // TODO:023 Dodati poziv metode PromijeniČlan objekta ms2 i metodi proslijediti "MyStruct".
+            // 023 Dodati poziv metode PromijeniČlan objekta ms2 i metodi proslijediti "MyStruct".
 
-            // TODO:024 Ponovno pozvati metodu IspišiČlan za obje instance te provjeriti i obrazložiti ispise.
+            ms2.tekst = "MyStruct";
 
-        }
+			// 024 Ponovno pozvati metodu IspišiČlan za obje instance te provjeriti i obrazložiti ispise.
+			ms1.IspišiČlan();
+			ms2.IspišiČlan();
+
+
+		}
 
         public static void IspišiKlase()
         {
             MojaKlasa mk1 = new MojaKlasa();
             MojaKlasa mk2 = mk1;
-            // TODO:027 Napisati naredbe koje pozivaju metodu IspišiČlan za obje instance.
+            // 027 Napisati naredbe koje pozivaju metodu IspišiČlan za obje instance.
+            mk1.IspišiČlan();
+            mk2.IspišiČlan();
 
-            Console.WriteLine();
-            // TODO:028 Dodati poziv metode PromijeniČlan objekta mk2 i metodi proslijediti broj 2.
+			Console.WriteLine();
+            // 028 Dodati poziv metode PromijeniČlan objekta mk2 i metodi proslijediti broj 2.
 
-            // TODO:029 Ponovno pozvati metodu IspišiČlan za obje instance te provjeriti i obrazložiti ispise.
+            mk2.broj = 2;
 
-        }
+			// 029 Ponovno pozvati metodu IspišiČlan za obje instance te provjeriti i obrazložiti ispise.
+			mk1.IspišiČlan();
+			mk2.IspišiČlan();
+		}
 
-        // TODO:029a Pokrenuti testove i provjeriti prolaze li oba testa u grupi TestClass_Struct.
+        // 029a Pokrenuti testove i provjeriti prolaze li oba testa u grupi TestClass_Struct.
 
         static void Main(string[] args)
         {

@@ -13,7 +13,7 @@
             sk.Metoda2();
         }
 
-        // TODO:090 Pokrenuti program, pogledati ispis i obrazložiti ga.
+        // 090 Pokrenuti program, pogledati ispis i obrazložiti ga.
 
         static void Main(string[] args)
         {
