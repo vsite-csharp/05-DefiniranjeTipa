@@ -4,28 +4,47 @@
     {
         public static void PozivPodrazumijevanogKonstruktora()
         {
-            // TODO:070 Stvoriti objekt strukture Udaljenost i ispisati vrijednosti članova.
+            // 070 Stvoriti objekt strukture Udaljenost i ispisati vrijednosti članova.
+
+            Udaljenost d = new Udaljenost();
+            Console.WriteLine(d.Broj);
+            Console.WriteLine(d.Jedinica);
 
 
-            // TODO:072 Stvoriti objekt pozivom praznog konstruktora te ispisati vrijednosti članova.
+
+			// 072 Stvoriti objekt pozivom praznog konstruktora te ispisati vrijednosti članova.
+		
 
 
-        }
+
+
+
+		}
 
         public static void PozivKonstruktoraSDvaArgumenta(double broj, JedinicaDuljine jedinica)
         {
-            // TODO:074 Stvoriti objekt pozivom konstruktora koji prima dva argumenta te ispisati vrijednosti članova.
+            // 074 Stvoriti objekt pozivom konstruktora koji prima dva argumenta te ispisati vrijednosti članova.
+
+            Udaljenost d3 = new Udaljenost(broj,jedinica);
+            Console.WriteLine(d3.Broj);
+            Console.WriteLine(d3.Jedinica);
+
+
 
 
         }
 
         public static void PozivKonstruktoraSJednimArgumentom(double broj)
         {
-            // TODO:076 Stvoriti objekt pozivom konstruktora s jednim argumentom te ispisati vrijednosti članova.
+            // 076 Stvoriti objekt pozivom konstruktora s jednim argumentom te ispisati vrijednosti članova.
+
+            Udaljenost d4 = new Udaljenost(broj);
+            Console.WriteLine(d4.Broj);
+            Console.WriteLine(d4.Jedinica);
 
         }
 
-        // TODO:077 Pokrenuti testove i provjeriti prolaze li sva 3 testa u grupi TestKonstruktoraStrukture
+        // T077 Pokrenuti testove i provjeriti prolaze li sva 3 testa u grupi TestKonstruktoraStrukture
 
         static void Main(string[] args)
         {
