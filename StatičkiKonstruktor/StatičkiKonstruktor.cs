@@ -13,7 +13,11 @@
             sk.Metoda2();
         }
 
-        // TODO:090 Pokrenuti program, pogledati ispis i obrazložiti ga.
+        // :090 Pokrenuti program, pogledati ispis i obrazložiti ga.
+
+        // Kod pozivanja statičke metode automatski se poziva staticki instruktor.
+        // Kako bi pozvali nestatičku metodu potrebna nam je instanca klase, što znači da se prvo mora pozvati statički konstruktor, zatim konstruktori
+        // bazne i izvedene klase i tek nakon toga se poziva metoda klase.
 
         static void Main(string[] args)
         {
