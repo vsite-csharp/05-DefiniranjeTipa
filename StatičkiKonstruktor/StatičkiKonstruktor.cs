@@ -13,7 +13,9 @@
             sk.Metoda2();
         }
 
-        // TODO:090 Pokrenuti program, pogledati ispis i obrazložiti ga.
+        // DONE:090 Pokrenuti program, pogledati ispis i obrazložiti ga.
+        // u prvom se ispiše statički konstruktor koji se ispisuje uvijek pozivom bilo koje metode klase, a u drugom
+        // se ispiše i konstruktor klase i bazne i naslijeđene plus statički budući da smo ovdje kreirali objekt tipa te klase
 
         static void Main(string[] args)
         {
