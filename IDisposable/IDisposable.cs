@@ -3,13 +3,15 @@
     // TODO:122 Deklarirati da klasa implementira IDisposable sučelje te dodati javnu metodu Dispose.
     // TODO:123 Dodati u klasu metodu protected virtual void Dispose(bool disposing) i u nju prebaciti poziv StreamWriter.Close iz destruktora.
     // TODO:124 Napraviti pozive metode iz destruktora i iz javne metode Dispose.
-    class RadSdatotekom
+    class RadSdatotekom : IDisposable
     {
         private readonly StreamWriter sw;
+        private bool disposedValue;
 
         public RadSdatotekom(string imeDatoteke)
         {
             sw = new StreamWriter(imeDatoteke);
+            sw.AutoFlush = true;
         }
 
         public void Zapiši(string tekst)
@@ -18,14 +20,45 @@
         }
 
         // TODO:121 Dodati klasi destruktor koji će pozvati metodu StreamWriter.Close (odn. StreamWriter.Dispose). Pokrenuti program i provjeriti ispis.
+
+        protected virtual void Dispose(bool disposing)
+        {
+            if (!disposedValue)
+            {
+                if (disposing)
+                {
+                    // TODO: dispose managed state (managed objects)
+                    sw.Close();
+                }
+
+                // TODO: free unmanaged resources (unmanaged objects) and override finalizer
+                // TODO: set large fields to null
+                disposedValue = true;
+            }
+        }
+
+        // // TODO: override finalizer only if 'Dispose(bool disposing)' has code to free unmanaged resources
+        ~RadSdatotekom()
+        {
+        //     // Do not change this code. Put cleanup code in 'Dispose(bool disposing)' method
+             Dispose(disposing: false);
+        }
+
+        public void Dispose()
+        {
+            // Do not change this code. Put cleanup code in 'Dispose(bool disposing)' method
+            Dispose(disposing: true);
+            GC.SuppressFinalize(this);
+        }
     }
 
     static class Disposable
     {
         public static void StvaranjeIPisanjeUDatoteku(string imeDatoteke)
         {
-            RadSdatotekom rd = new RadSdatotekom(imeDatoteke);
+            using RadSdatotekom rd = new RadSdatotekom(imeDatoteke);
             rd.Zapiši("Ovo je moj upis");
+            //rd.Dispose();
 
             // TODO:125 Dodati poziv metode RadSDatotekom.Dispose.
 
@@ -46,6 +79,7 @@
             {
                 StvaranjeIPisanjeUDatoteku("moj.txt");
                 Console.WriteLine("Brišem datoteku");
+
                 BrisanjeDatoteke("moj.txt");
             }
             catch (Exception e)
