@@ -45,7 +45,6 @@
             PozivKonstruktoraSJednimArgumentom(17);
 
             Console.WriteLine("GOTOVO!!!");
-            Console.ReadKey();
         }
     }
 }

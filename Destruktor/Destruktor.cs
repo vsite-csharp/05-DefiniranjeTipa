@@ -16,7 +16,8 @@
             //}
 
 
-            Console.WriteLine("GOTOVO!!!");
+            Console.WriteLine("Petlja je završila!!!");
+            Console.WriteLine("Pritisni bilo koju tipku za završetak");
             Console.ReadKey();
 
             Console.WriteLine("Završio sam 'Main'");

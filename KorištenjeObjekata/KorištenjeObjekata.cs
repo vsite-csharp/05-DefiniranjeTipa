@@ -49,7 +49,6 @@ namespace Vsite.CSharp.DefiniranjeTipa
             Console.WriteLine(IzračunajBrojDanaIzmeđuDvaDatuma(2015, 5, 1, 2016, 5, 1));
 
             Console.WriteLine("GOTOVO!!!");
-            Console.ReadKey();
         }
 
     }

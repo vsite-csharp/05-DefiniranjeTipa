@@ -31,7 +31,6 @@
             StvoriInstancuIzvedeneKlaseKonstruktoromSJednimArgumentom(5);
 
             Console.WriteLine("GOTOVO!!!");
-            Console.ReadKey();
         }
     }
 }

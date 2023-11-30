@@ -11,7 +11,6 @@
             ig.PredstaviSe();
 
             Console.WriteLine("GOTOVO!!!");
-            Console.ReadKey();
         }
 
         public static void IzravnoKorištenjeUgnježđeneKlase()

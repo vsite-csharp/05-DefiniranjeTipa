@@ -23,7 +23,6 @@
             PozoviNestatičkuMetodu();
 
             Console.WriteLine("GOTOVO!!!");
-            Console.ReadKey();
         }
     }
 }

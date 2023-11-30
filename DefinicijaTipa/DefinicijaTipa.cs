@@ -53,7 +53,6 @@
             IspišiČlanStrukture();
 
             Console.WriteLine("GOTOVO!!!");
-            Console.ReadKey();
         }
     }
 }
