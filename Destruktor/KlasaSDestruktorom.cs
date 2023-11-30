@@ -20,5 +20,7 @@ namespace Vsite.CSharp.DefiniranjeTipa
         public readonly int RedniBroj; // redni broj objekta
 
         static int Brojač = 0; // brojač ukupno stvorenih objekata
+        
+        int[] polje = new int[1000];
     }
 }
