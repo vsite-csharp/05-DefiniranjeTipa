@@ -2,14 +2,14 @@
 {
     class Gnijezdo
     {
-        class Ugnježđena
+        public class Ugnježđena
         {
             public void IspišiMe()
             {
                 Console.WriteLine("Ugnježđena");
             }
 
-            protected void PredstaviSe()
+            public void PredstaviSe()
             {
                 Console.WriteLine("Ja sam klasa Ugnježđena");
             }
@@ -23,7 +23,8 @@
         // TODO:040 Napisati implementaciju metode IspišiMe koja će pozvati metodu IspišiMe iz klase Ugnježđena
         public void IspišiMe()
         {
-
+            Ugnježđena u = new Ugnježđena();
+            u.IspišiMe();
         }
     }
 
@@ -33,7 +34,8 @@
         // (po potrebi promijeniti pravo pristupa za klasu Ugnježđena)
         public void PredstaviSe()
         {
-            
+            Ugnježđena u = new Ugnježđena();
+            u.PredstaviSe();
         }
     }
 }
