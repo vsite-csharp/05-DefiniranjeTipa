@@ -3,13 +3,20 @@
     // TODO:122 Deklarirati da klasa implementira IDisposable sučelje te dodati javnu metodu Dispose.
     // TODO:123 Dodati u klasu metodu protected virtual void Dispose(bool disposing) i u nju prebaciti poziv StreamWriter.Close iz destruktora.
     // TODO:124 Napraviti pozive metode iz destruktora i iz javne metode Dispose.
-    class RadSdatotekom
+    class RadSdatotekom : IDisposable
     {
         private readonly StreamWriter sw;
+        private bool disposedValue;
 
         public RadSdatotekom(string imeDatoteke)
         {
             sw = new StreamWriter(imeDatoteke);
+            sw.AutoFlush = true;
+        }
+
+        public void Dispose()
+        {
+            throw new NotImplementedException();
         }
 
         public void Zapiši(string tekst)
@@ -24,8 +31,9 @@
     {
         public static void StvaranjeIPisanjeUDatoteku(string imeDatoteke)
         {
-            RadSdatotekom rd = new RadSdatotekom(imeDatoteke);
+            using RadSdatotekom rd = new RadSdatotekom(imeDatoteke);
             rd.Zapiši("Ovo je moj upis");
+            //rd.Dispose();
 
             // TODO:125 Dodati poziv metode RadSDatotekom.Dispose.
 
